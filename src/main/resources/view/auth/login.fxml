@@ -21,14 +21,14 @@
                   <Image url="@../../../../../../../Clothify-in-black.png" />
                </image>
             </ImageView>
-            <Hyperlink layoutX="143.0" layoutY="276.0" text="Forgot Password?" />
-            <JFXButton layoutX="176.0" layoutY="319.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+            <Hyperlink layoutX="143.0" layoutY="276.0" fx:id="forgotPassword"  text="Forgot Password?" />
+            <JFXButton layoutX="176.0" layoutY="319.0" prefHeight="25.0" fx:id="loginButton" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
             <Label layoutX="155.0" layoutY="361.0" text="Dont have an Account?" />
-            <Hyperlink layoutX="278.0" layoutY="358.0" text="Sign Up" />
+            <Hyperlink layoutX="278.0" layoutY="358.0" fx:id="createAccount" text="Sign Up" />
          </children>
       </AnchorPane>
    </children>
