@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.catalog.CatalogFormController">
+   <children>
+      <Label layoutX="53.0" layoutY="48.0" text="Catalog">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="53.0" layoutY="206.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Add Product" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="254.0" layoutY="206.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Return Product" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="187.0" layoutY="309.0" prefHeight="229.0" prefWidth="612.0">
+        <columns>
+          <TableColumn prefWidth="35.0" />
+          <TableColumn prefWidth="115.0" text="Product Id" />
+            <TableColumn prefWidth="115.0" text="Product" />
+            <TableColumn prefWidth="115.0" text="Unit Price" />
+            <TableColumn prefWidth="115.0" text="Quantity" />
+            <TableColumn prefWidth="115.0" text="Price" />
+        </columns>
+      </TableView>
+      <JFXButton layoutX="454.0" layoutY="206.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Product" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="54.0" layoutY="142.0" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Ladies" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="263.0" layoutY="142.0" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Gents" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="472.0" layoutY="142.0" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Kids" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="656.0" layoutY="206.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Product" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

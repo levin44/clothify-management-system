@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.catalog.ReturnProductFormController">
+   <children>
+      <Label layoutX="53.0" layoutY="48.0" text="Return Product">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXTextField layoutX="53.0" layoutY="134.0" prefHeight="35.0" prefWidth="167.0" promptText="Order ID" text="Enter Product Id" />
+      <JFXButton layoutX="53.0" layoutY="236.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Return Product" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
