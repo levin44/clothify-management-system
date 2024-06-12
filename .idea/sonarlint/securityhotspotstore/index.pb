@@ -39,3 +39,13 @@ o
 ?src/main/java/org/example/auth/CreateAccountFormController.java,4\4\44b087bc0a42738a794fc3abe4e68b2ec76406ef
 p
 @src/main/java/org/example/auth/ForgotPasswordFormController.java,7\a\7a16cd5cc9a22dc9f6a02005161cca0e954d9cbc
+a
+1src/main/java/org/example/util/HibernateUtil.java,d\2\d220e415002e683af285f12a089f3139d7e179cb
+^
+.src/main/java/org/example/dao/CustomerDAO.java,b\c\bc2c625173623373e006fd552dc4ae4ef117142a
+f
+6src/main/java/org/example/service/CustomerService.java,4\9\4954ace079105e8f31b638baef5d8352ff055b69
+^
+.src/main/java/org/example/entity/Customer.java,d\d\ddc5e643f323fa4e4168af80fa989849d11c1a1a
+s
+Csrc/main/java/org/example/controller/order/OrderFormController.java,4\c\4cb4f5378d12c3dcbdee7f89e9a71e0d82cd193f

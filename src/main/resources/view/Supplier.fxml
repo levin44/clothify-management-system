@@ -15,12 +15,12 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <JFXButton layoutX="53.0" layoutY="355.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Add Supplier" textFill="WHITE">
+      <JFXButton layoutX="59.0" layoutY="305.0" onAction="#handleAddSupplier" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Add Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <TableView layoutX="187.0" layoutY="450.0" prefHeight="229.0" prefWidth="612.0">
+      <TableView layoutX="185.0" layoutY="414.0" prefHeight="229.0" prefWidth="612.0">
         <columns>
           <TableColumn prefWidth="35.0" />
           <TableColumn prefWidth="115.0" text="Product Id" />
@@ -30,25 +30,23 @@
             <TableColumn prefWidth="115.0" text="Price" />
         </columns>
       </TableView>
-      <JFXButton layoutX="392.0" layoutY="355.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Supplier" textFill="WHITE">
+      <JFXButton layoutX="392.0" layoutY="305.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="697.0" layoutY="355.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Supplier" textFill="WHITE">
+      <JFXButton layoutX="697.0" layoutY="305.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXTextField layoutX="59.0" layoutY="163.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
-      <JFXTextField layoutX="59.0" layoutY="199.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Company" />
-      <JFXTextField layoutX="59.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Email" />
-      <JFXTextField layoutX="59.0" layoutY="285.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Product" />
+      <JFXTextField fx:id="addNameField" layoutX="59.0" layoutY="163.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
+      <JFXTextField fx:id="addCompanyField" layoutX="59.0" layoutY="199.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Company" />
+      <JFXTextField fx:id="addEmailField" layoutX="59.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Email" />
       <JFXTextField layoutX="388.0" layoutY="124.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Enter Supplier ID" />
-      <JFXTextField layoutX="693.0" layoutY="285.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Enter Supplier ID" />
+      <JFXTextField layoutX="693.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Enter Supplier ID" />
       <JFXTextField disable="true" layoutX="388.0" layoutY="168.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
       <JFXTextField disable="true" layoutX="388.0" layoutY="204.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Company" />
       <JFXTextField disable="true" layoutX="388.0" layoutY="246.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Email" />
-      <JFXTextField disable="true" layoutX="388.0" layoutY="290.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Product" />
    </children>
 </AnchorPane>

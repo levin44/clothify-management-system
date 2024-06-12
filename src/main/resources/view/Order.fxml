@@ -8,10 +8,10 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane layoutX="87.0" layoutY="-113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane layoutX="87.0" layoutY="-113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.order.OrderFormController">
    <children>
       <JFXTextField layoutX="726.0" layoutY="105.0" prefHeight="35.0" prefWidth="167.0" promptText="Order ID" />
-      <JFXTextField layoutX="53.0" layoutY="190.0" prefHeight="35.0" prefWidth="167.0" promptText="Customer ID" />
+      <JFXTextField fx:id="customerPhoneField" layoutX="53.0" layoutY="190.0" prefHeight="35.0" prefWidth="167.0" promptText="Customer Phone" />
       <JFXTextField layoutX="53.0" layoutY="244.0" prefHeight="35.0" prefWidth="167.0" promptText="Product. ID" />
       <JFXTextField layoutX="53.0" layoutY="300.0" prefHeight="35.0" prefWidth="167.0" promptText="Quantity" />
       <Label layoutX="292.0" layoutY="243.0" prefHeight="30.0" prefWidth="244.0" text="Product Name">
@@ -54,8 +54,8 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="296.0" layoutY="190.0" prefHeight="35.0" prefWidth="167.0" promptText="Customer ID" text="Customer Name" />
-      <JFXButton layoutX="551.0" layoutY="190.0" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Add Customer" textFill="WHITE">
+      <JFXTextField fx:id="customerNameField" layoutX="296.0" layoutY="190.0" prefHeight="35.0" prefWidth="167.0" promptText="Customer ID" text="Customer Name" />
+      <JFXButton layoutX="551.0" layoutY="190.0" prefHeight="35.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Add Customer" textFill="WHITE" onAction="#handleAddCustomer">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
