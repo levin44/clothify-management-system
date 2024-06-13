@@ -20,33 +20,32 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <TableView layoutX="185.0" layoutY="414.0" prefHeight="229.0" prefWidth="612.0">
+      <TableView fx:id="tblSupplier" layoutX="210.0" layoutY="403.0" prefHeight="229.0" prefWidth="532.0">
         <columns>
           <TableColumn prefWidth="35.0" />
-          <TableColumn prefWidth="115.0" text="Product Id" />
-            <TableColumn prefWidth="115.0" text="Product" />
-            <TableColumn prefWidth="115.0" text="Unit Price" />
-            <TableColumn prefWidth="115.0" text="Quantity" />
-            <TableColumn prefWidth="115.0" text="Price" />
+          <TableColumn fx:id="colSupplierId" prefWidth="115.0" text="Supplier Id" />
+            <TableColumn fx:id="colName" prefWidth="115.0" text="Name" />
+            <TableColumn fx:id="colCompany" prefWidth="115.0" text="Company" />
+            <TableColumn fx:id="colEmail" prefWidth="115.0" text="Email" />
         </columns>
       </TableView>
-      <JFXButton layoutX="392.0" layoutY="305.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Supplier" textFill="WHITE">
+      <JFXButton layoutX="392.0" layoutY="305.0" onAction="#handleUpdateButton" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="697.0" layoutY="305.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Supplier" textFill="WHITE">
+      <JFXButton layoutX="697.0" layoutY="305.0" onAction="#handleRemoveSupplier" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Supplier" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
       <JFXTextField fx:id="addNameField" layoutX="59.0" layoutY="163.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
-      <JFXTextField fx:id="addCompanyField" layoutX="59.0" layoutY="199.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Company" />
-      <JFXTextField fx:id="addEmailField" layoutX="59.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Email" />
-      <JFXTextField layoutX="388.0" layoutY="124.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Enter Supplier ID" />
-      <JFXTextField layoutX="693.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Enter Supplier ID" />
-      <JFXTextField disable="true" layoutX="388.0" layoutY="168.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
-      <JFXTextField disable="true" layoutX="388.0" layoutY="204.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Company" />
-      <JFXTextField disable="true" layoutX="388.0" layoutY="246.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" text="Email" />
+      <JFXTextField fx:id="addCompanyField" layoutX="59.0" layoutY="199.0" prefHeight="25.0" prefWidth="191.0" promptText="Company" />
+      <JFXTextField fx:id="addEmailField" layoutX="59.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Email" />
+      <JFXTextField fx:id="updateId" layoutX="388.0" layoutY="124.0" onAction="#loadSupplierDetails" prefHeight="25.0" prefWidth="191.0" promptText="Enter Supplier ID" />
+      <JFXTextField fx:id="removeSupplierId" layoutX="693.0" layoutY="241.0" prefHeight="25.0" prefWidth="191.0" promptText="Enter Supplier ID" />
+      <JFXTextField fx:id="updateName" disable="true" layoutX="388.0" layoutY="168.0" prefHeight="25.0" prefWidth="191.0" promptText="Name" />
+      <JFXTextField fx:id="updateCompany" disable="true" layoutX="388.0" layoutY="204.0" prefHeight="25.0" prefWidth="191.0" promptText="Company" />
+      <JFXTextField fx:id="updateEmail" disable="true" layoutX="388.0" layoutY="246.0" prefHeight="25.0" prefWidth="191.0" promptText="Email" />
    </children>
 </AnchorPane>

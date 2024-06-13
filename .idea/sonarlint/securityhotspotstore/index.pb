@@ -49,3 +49,15 @@ f
 .src/main/java/org/example/entity/Customer.java,d\d\ddc5e643f323fa4e4168af80fa989849d11c1a1a
 s
 Csrc/main/java/org/example/controller/order/OrderFormController.java,4\c\4cb4f5378d12c3dcbdee7f89e9a71e0d82cd193f
+^
+.src/main/java/org/example/entity/Supplier.java,f\e\fe33d1527a6a2b2f1bb275cde19af044c3b18801
+f
+6src/main/java/org/example/service/SupplierService.java,d\d\dd198f2e4168a16e72f2a268456a85af46d89ae5
+^
+.src/main/java/org/example/dao/SupplierDAO.java,4\6\464a9922fd136bbe2d446b03254ccde96945efc5
+]
+-src/main/java/org/example/entity/Product.java,1\e\1e07868971cbfb5de651b69686112e18d30a3bd6
+]
+-src/main/java/org/example/dao/ProductDAO.java,3\a\3a7996e38255dd5294124ef123a2d7ef8e2226f9
+e
+5src/main/java/org/example/service/ProductService.java,8\1\81c53d38e408756e2f43b48ae61ce7d10fae7982

@@ -34,10 +34,10 @@ public class OrderFormController {
             customerPhoneField.clear();
             customerNameField.clear();
 
-        } catch (Exception e) {
-            showAlert(AlertType.ERROR, "Error", "Failed to add customer: " + e.getMessage());
-            e.printStackTrace();
-        }
+            } catch (Exception e) {
+                showAlert(AlertType.ERROR, "Error", "Failed to add customer: " + e.getMessage());
+                e.printStackTrace();
+            }
     }
 
     private void showAlert(AlertType alertType, String title, String message) {
