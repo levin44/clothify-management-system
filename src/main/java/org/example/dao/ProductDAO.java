@@ -1,7 +1,7 @@
 package org.example.dao;
 
 import org.example.entity.Product;
-import org.example.entity.Supplier;
+import org.example.entity.Product;
 import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
@@ -26,5 +26,37 @@ public class ProductDAO {
         return products;
     }
 
+    public boolean updateProduct(Product product) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        session.update(product);
+        session.getTransaction().commit();
+        session.close();
+        return true;
+    }
 
+    public Product getProductById(int id) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        Product product = session.get(Product.class, id);
+        session.getTransaction().commit();
+        session.close();
+        return product;
+    }
+
+    public boolean deleteProductById(int id) {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        Product product = session.get(Product.class, id);
+        if (product != null) {
+            session.delete(product);
+            session.getTransaction().commit();
+            session.close();
+            return true;
+        } else {
+            session.getTransaction().rollback();
+            session.close();
+            return false;
+        }
+    }
 }

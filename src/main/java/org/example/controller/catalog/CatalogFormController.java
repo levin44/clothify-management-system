@@ -48,6 +48,7 @@ public class CatalogFormController {
 
     private void loadProductTable() {
         List<Product> products = productService.getAllProducts();
+        System.out.println(products);
         tblProduct.getItems().setAll(products);
     }
     public void handleAddProduct(ActionEvent actionEvent) {
@@ -106,6 +107,51 @@ public class CatalogFormController {
     }
 
     public void handleUpdateProduct(ActionEvent actionEvent) {
+        try {
+            int id = Integer.parseInt(productIdField.getText());
+            String name = nameField.getText();
+            String size = sizeField.getText();
+            int quantity = Integer.parseInt(quantityField.getText());
+            String category = catagoryField.getText();
+            double price = Double.parseDouble(priceField.getText());
+            int supplierId = Integer.parseInt(supplierField.getText());
+
+
+
+//            if (name.isEmpty() || company.isEmpty() || email.isEmpty()) {
+//                showAlert(Alert.AlertType.ERROR, "Form Error!", "Please fill in all fields");
+//                return;
+//            }
+            Supplier supplier = supplierService.getSupplierById(supplierId);
+
+            Product product = new Product();
+            product.setId(id);
+            product.setName(name);
+            product.setSize(size);
+            product.setQuantity(quantity);
+            product.setCategory(category);
+            product.setPrice(price);
+            product.setSupplier(supplier);
+
+
+            productService.updateProduct(product);
+            showAlert(Alert.AlertType.INFORMATION, "Success", "Product updated successfully!");
+
+            // Clear the fields after successful update
+            productIdField.clear();
+            nameField.clear();
+            sizeField.clear();
+            quantityField.clear();
+            catagoryField.clear();
+            priceField.clear();
+            supplierField.clear();
+
+            loadProductTable();
+
+        } catch (Exception e) {
+            showAlert(Alert.AlertType.ERROR, "Error", "Failed to update product: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void handleGents(ActionEvent actionEvent) {
@@ -118,8 +164,46 @@ public class CatalogFormController {
     }
 
     public void handleRemoveProduct(ActionEvent actionEvent) {
+        try {
+            int id = Integer.parseInt(productIdField.getText());
+
+            boolean isDeleted = productService.deleteProductById(id);
+            if (isDeleted) {
+                showAlert(Alert.AlertType.INFORMATION, "Success", "Product removed successfully!");
+                productIdField.clear();
+                loadProductTable();
+            } else {
+                showAlert(Alert.AlertType.ERROR, "Error", "Product not found");
+            }
+        } catch (Exception e) {
+            showAlert(Alert.AlertType.ERROR, "Error", "Failed to remove product: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 
     public void handleAll(ActionEvent actionEvent) {
+    }
+
+    public void loadProductDetails(ActionEvent actionEvent) {
+        try {
+            int id = Integer.parseInt(productIdField.getText());
+            Product product = productService.getProductById(id);
+
+            if (product != null) {
+                nameField.setText(product.getName());
+                sizeField.setText(product.getSize());
+                catagoryField.setText(product.getCategory());
+                supplierField.setText(String.valueOf(product.getSupplier().getId()));
+                quantityField.setText(String.valueOf(product.getQuantity()));
+                priceField.setText(String.valueOf(product.getPrice()));
+
+
+            } else {
+                showAlert(Alert.AlertType.ERROR, "Error", "Product not found");
+            }
+        } catch (Exception e) {
+            showAlert(Alert.AlertType.ERROR, "Error", "Failed to load supplier details: " + e.getMessage());
+            e.printStackTrace();
+        }
     }
 }

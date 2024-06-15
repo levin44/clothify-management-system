@@ -23,7 +23,7 @@ public class Supplier {
     private String name;
     private String company;
 
-    @OneToMany(mappedBy = "supplier", cascade = CascadeType.ALL, orphanRemoval = true, fetch = FetchType.EAGER)
+    @OneToMany(mappedBy = "supplier", orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Product> products;
 }
 

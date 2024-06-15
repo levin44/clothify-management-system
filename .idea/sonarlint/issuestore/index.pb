@@ -11,12 +11,8 @@ S
 -.idea/sonarlint/securityhotspotstore/index.pb,8\8\88a9255124c95bdc913197c120a8d560edc59c8e
 r
 Bsrc/main/java/org/example/controller/dashboard/AdminDashboard.java,5\0\5003dce9db0ad3877ea04e586dc59dd771138233
-e
-5src/main/java/org/example/controller/order/Order.java,2\8\28e0290f7b98b9d5c9f3166e1ee7774aaaa2f684
 Å
 Qsrc/main/java/org/example/controller/orderhistory/OrderHistoryFormController.java,9\8\988f70e49534e579df8d49958999adbc66a0a519
-i
-9src/main/java/org/example/controller/catalog/Catalog.java,f\0\f08b652b654aae7c7838e8a41319c343cc8d3445
 w
 Gsrc/main/java/org/example/controller/catalog/CatalogFormController.java,3\4\3447b48002f926731fb0cef35795a0cf7ff985d7
 z

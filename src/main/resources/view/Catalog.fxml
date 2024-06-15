@@ -66,7 +66,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXTextField fx:id="productIdField" layoutX="48.0" layoutY="110.0" prefHeight="35.0" prefWidth="167.0" promptText="Product Id" />
+      <JFXTextField fx:id="productIdField" layoutX="48.0" layoutY="110.0" onAction="#loadProductDetails" prefHeight="35.0" prefWidth="167.0" promptText="Product Id" />
       <JFXTextField fx:id="nameField" layoutX="252.0" layoutY="110.0" prefHeight="35.0" prefWidth="167.0" promptText="Name" />
       <JFXTextField fx:id="sizeField" layoutX="45.0" layoutY="171.0" prefHeight="35.0" prefWidth="167.0" promptText="Size" />
       <JFXTextField fx:id="quantityField" layoutX="252.0" layoutY="177.0" prefHeight="35.0" prefWidth="167.0" promptText="Quantity" />
