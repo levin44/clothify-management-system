@@ -57,3 +57,11 @@ f
 -src/main/java/org/example/dao/ProductDAO.java,3\a\3a7996e38255dd5294124ef123a2d7ef8e2226f9
 e
 5src/main/java/org/example/service/ProductService.java,8\1\81c53d38e408756e2f43b48ae61ce7d10fae7982
+b
+2src/main/java/org/example/entity/OrderDetails.java,b\6\b61ac8e7377a0a97359632c38563d82dfaf2cb03
+\
+,src/main/java/org/example/entity/Orders.java,e\7\e76a5569aa577b13c54bda414d3edc3929e785d1
+Z
+*src/main/java/org/example/entity/User.java,1\7\1776f7636d5efc84da1d29711989f49b294c2afb
+]
+-src/main/java/org/example/entity/CartTbl.java,f\e\fe043f68735b265293b04c6253efacab5e05c9eb
