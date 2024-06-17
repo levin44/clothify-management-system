@@ -8,12 +8,17 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
-import org.example.entity.CartTbl;
-import org.example.entity.Customer;
-import org.example.entity.Product;
+import javafx.scene.control.cell.PropertyValueFactory;
+import org.example.entity.*;
 import org.example.service.CustomerService;
 import javafx.scene.control.Alert.AlertType;
+import org.example.service.OrderService;
 import org.example.service.ProductService;
+
+import java.net.URL;
+import java.util.List;
+import java.util.ResourceBundle;
+import java.util.stream.Collectors;
 
 public class OrderFormController {
     public JFXTextField customerNameField;
@@ -29,11 +34,26 @@ public class OrderFormController {
     public TableColumn colUnitPrice;
     public TableColumn colQuantity;
     public TableColumn colPrice;
+    public Label lblTotal;
+    public Label lblOrderId;
+    public JFXTextField orderIdField;
 
     private CustomerService customerService = new CustomerService();
     private ProductService productService = new ProductService();
+    private OrderService orderService = new OrderService();
 
     Product product;
+
+    public void initialize() {
+
+        colProductId.setCellValueFactory(new PropertyValueFactory<>("productId"));
+        colProduct.setCellValueFactory(new PropertyValueFactory<>("productName"));
+        colUnitPrice.setCellValueFactory(new PropertyValueFactory<>("unitPrice"));
+        colQuantity.setCellValueFactory(new PropertyValueFactory<>("qty"));
+        colPrice.setCellValueFactory(new PropertyValueFactory<>("total"));
+
+
+    }
 
     public void handleAddCustomer(ActionEvent actionEvent) {
         try {
@@ -106,4 +126,59 @@ public class OrderFormController {
         lblPrice.setText(String.valueOf(product.getPrice() * qty));
     }
 
+    public void btnPlaceOrder(ActionEvent actionEvent) {
+
+        try {
+            String orderId = orderIdField.getText();
+            String customerPhone = customerPhoneField.getText();
+
+            if (customerPhone.isEmpty() || cartList.isEmpty()) {
+                showAlert(AlertType.ERROR, "Form Error!", "Please fill in customer details and add products to the cart");
+                return;
+            }
+
+            Customer customer = customerService.getCustomerByPhone(Integer.parseInt(customerPhone));
+            if (customer == null) {
+                showAlert(AlertType.ERROR, "Error", "Customer not found");
+                return;
+            }
+
+            Orders order = new Orders();
+            order.setCustomer(customer);
+            order.setPaymentType("Credit Card"); // This is an example, set the appropriate payment type
+            order.setTotalCost(cartList.stream().mapToDouble(CartTbl::getTotal).sum());
+
+            List<OrderDetails> orderDetailsList = cartList.stream().map(cartItem -> {
+                OrderDetails orderDetails = new OrderDetails();
+                orderDetails.setProduct(productService.getProductById(cartItem.getProductId()));
+                orderDetails.setQuantity(cartItem.getQty());
+                orderDetails.setOrder(order);
+                return orderDetails;
+            }).collect(Collectors.toList());
+
+            order.setOrderDetails(orderDetailsList);
+
+            orderService.addOrder(order);
+
+            showAlert(AlertType.INFORMATION, "Success", "Order placed successfully!");
+
+            // Clear the fields and the cart after successful order placement
+            orderIdField.clear();
+            customerPhoneField.clear();
+            customerNameField.clear();
+            productIdField.clear();
+            quantityField.clear();
+            lblProductName.setText("");
+            lblUnitPrice.setText("");
+            lblPrice.setText("");
+            lblTotal.setText("");
+            cartList.clear();
+            tblCart.setItems(cartList);
+
+        } catch (Exception e) {
+            showAlert(AlertType.ERROR, "Error", "Failed to place order: " + e.getMessage());
+            e.printStackTrace();
+        }
+
+    }
 }

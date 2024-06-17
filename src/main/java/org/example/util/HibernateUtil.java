@@ -1,8 +1,6 @@
 package org.example.util;
 
-import org.example.entity.Customer;
-import org.example.entity.Product;
-import org.example.entity.Supplier;
+import org.example.entity.*;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.boot.Metadata;
@@ -24,6 +22,10 @@ public class HibernateUtil {
                 .addAnnotatedClass(Customer.class)
                 .addAnnotatedClass(Supplier.class)
                 .addAnnotatedClass(Product.class)
+                .addAnnotatedClass(Orders.class)
+                .addAnnotatedClass(OrderDetails.class)
+                .addAnnotatedClass(User.class)
+                .addAnnotatedClass(CartTbl.class)
                 .getMetadataBuilder()
                 .applyImplicitNamingStrategy(ImplicitNamingStrategyJpaCompliantImpl.INSTANCE)
                 .build();

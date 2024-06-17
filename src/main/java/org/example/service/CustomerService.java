@@ -24,5 +24,8 @@ public class CustomerService {
 //        }
 
     }
+    public Customer getCustomerByPhone(int phone) {
+        return customerDAO.getCustomerByPhone(phone);
+    }
 }
 
