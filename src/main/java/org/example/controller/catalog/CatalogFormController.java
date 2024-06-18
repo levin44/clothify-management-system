@@ -206,4 +206,7 @@ public class CatalogFormController {
             e.printStackTrace();
         }
     }
+
+    public void handleRegister(ActionEvent actionEvent) {
+    }
 }

@@ -79,6 +79,5 @@
             <Font size="14.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="orderIdField" layoutX="255.0" layoutY="150.0" prefHeight="35.0" prefWidth="167.0" promptText="Order Id" />
    </children>
 </AnchorPane>

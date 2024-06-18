@@ -13,8 +13,7 @@ import java.util.List;
 @ToString(exclude = "orderDetails")
 public class Orders {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer orderId;
+    private String orderId;
 
     private String paymentType;
     private Double totalCost;

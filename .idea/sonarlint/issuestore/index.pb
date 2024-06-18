@@ -69,3 +69,11 @@ c
 3src/main/java/org/example/service/OrderService.java,7\f\7fda134f583e0a5a2e13f2a05f033c59f8d9cf24
 [
 +src/main/java/org/example/dao/OrderDAO.java,f\2\f298f31f8e5cc454c242123af4ac87df10b977ee
+u
+Esrc/main/java/org/example/controller/dashboard/EmployeeDashboard.java,5\9\592471d8f4bdbf6b015ecc7970df6b3f1e785951
+}
+Msrc/main/java/org/example/controller/user/AdminUserManagerFormController.java,5\2\5200162d2eb02c66d0cca8158ab774f19a892311
+Z
+*src/main/java/org/example/dao/UserDAO.java,c\6\c6597350f14825d907edc61bd4084ec0fcf71419
+b
+2src/main/java/org/example/service/UserService.java,0\a\0a429d57c61a30e0b0d20ccf1326f3bddfab3779

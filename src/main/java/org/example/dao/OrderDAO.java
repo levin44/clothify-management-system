@@ -31,4 +31,11 @@ public class OrderDAO {
         return true;
 
     }
+
+    public static int getOrderCount() {
+        Session session = HibernateUtil.getSession();
+        Long count = (Long) session.createQuery("SELECT COUNT(o) FROM Orders o").uniqueResult();
+        session.close();
+        return count.intValue();
+    }
 }

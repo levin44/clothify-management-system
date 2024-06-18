@@ -1,15 +1,16 @@
 package org.example.controller.dashboard;
 
-import javafx.fxml.FXML;
-import javafx.scene.layout.Pane;
-import javafx.event.ActionEvent;
 import com.jfoenix.controls.JFXButton;
+import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import java.io.IOException;
 import javafx.scene.Node;
+import javafx.scene.layout.Pane;
+
+import java.io.IOException;
 import java.net.URL;
 
-public class AdminDashboard {
+public class EmployeeDashboard {
 
     @FXML
     public JFXButton orderButton;
@@ -25,8 +26,6 @@ public class AdminDashboard {
     public JFXButton myAccountButton;
     @FXML
     public JFXButton logoutButton;
-    @FXML
-    public JFXButton userManagerButton;
     @FXML
     private Pane mainContent;
 
@@ -51,8 +50,8 @@ public class AdminDashboard {
             case "reportsButton":
                 fxmlFile = "/view/Reports.fxml"; // Update this to the correct FXML file name
                 break;
-            case "userManagerButton":
-                fxmlFile = "/view/AdminUserManger.fxml"; // Update this to the correct FXML file name
+            case "myAccountButton":
+                fxmlFile = "/view/MyAccount.fxml"; // Update this to the correct FXML file name
                 break;
             case "logoutButton":
                 // Handle logout

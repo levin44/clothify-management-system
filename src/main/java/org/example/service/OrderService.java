@@ -13,4 +13,9 @@ public class OrderService {
     public void addOrder(Orders orders) {OrderDAO.saveOrder(orders);
     }
 
+    public String generateOrderId() {
+        int count = OrderDAO.getOrderCount() + 1; // Assuming you have a method to get the total count of orders
+        return String.format("A%03d", count);
+    }
+
 }

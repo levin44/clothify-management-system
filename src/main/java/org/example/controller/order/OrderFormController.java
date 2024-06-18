@@ -36,13 +36,14 @@ public class OrderFormController {
     public TableColumn colPrice;
     public Label lblTotal;
     public Label lblOrderId;
-    public JFXTextField orderIdField;
+
 
     private CustomerService customerService = new CustomerService();
     private ProductService productService = new ProductService();
     private OrderService orderService = new OrderService();
 
     Product product;
+
 
     public void initialize() {
 
@@ -52,6 +53,7 @@ public class OrderFormController {
         colQuantity.setCellValueFactory(new PropertyValueFactory<>("qty"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("total"));
 
+        lblOrderId.setText(orderService.generateOrderId());
 
     }
 
@@ -129,7 +131,7 @@ public class OrderFormController {
     public void btnPlaceOrder(ActionEvent actionEvent) {
 
         try {
-            String orderId = orderIdField.getText();
+            String orderId = lblOrderId.getText();
             String customerPhone = customerPhoneField.getText();
 
             if (customerPhone.isEmpty() || cartList.isEmpty()) {
@@ -144,6 +146,7 @@ public class OrderFormController {
             }
 
             Orders order = new Orders();
+            order.setOrderId(orderId);
             order.setCustomer(customer);
             order.setPaymentType("Credit Card"); // This is an example, set the appropriate payment type
             order.setTotalCost(cartList.stream().mapToDouble(CartTbl::getTotal).sum());
@@ -163,7 +166,7 @@ public class OrderFormController {
             showAlert(AlertType.INFORMATION, "Success", "Order placed successfully!");
 
             // Clear the fields and the cart after successful order placement
-            orderIdField.clear();
+            lblOrderId.setText(orderService.generateOrderId());
             customerPhoneField.clear();
             customerNameField.clear();
             productIdField.clear();
