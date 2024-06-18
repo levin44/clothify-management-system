@@ -1,12 +1,16 @@
 package org.example.controller.dashboard;
 
 import javafx.fxml.FXML;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
 import javafx.event.ActionEvent;
 import com.jfoenix.controls.JFXButton;
 import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import javafx.scene.Node;
+import javafx.stage.Stage;
+
 import java.net.URL;
 
 public class AdminDashboard {
@@ -31,7 +35,7 @@ public class AdminDashboard {
     private Pane mainContent;
 
     @FXML
-    public void handleButtonAction(ActionEvent event) {
+    public void handleButtonAction(ActionEvent event) throws IOException {
         JFXButton source = (JFXButton) event.getSource();
         String fxmlFile = "";
 
@@ -55,7 +59,10 @@ public class AdminDashboard {
                 fxmlFile = "/view/AdminUserManger.fxml"; // Update this to the correct FXML file name
                 break;
             case "logoutButton":
-                // Handle logout
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/auth/login.fxml"));
+                Parent root = loader.load();
+                Stage stage = (Stage) logoutButton.getScene().getWindow();
+                stage.setScene(new Scene(root));
                 break;
         }
 

@@ -4,6 +4,9 @@ import org.example.entity.Supplier;
 import org.example.entity.User;
 import org.example.util.HibernateUtil;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class UserDAO {
 
@@ -45,5 +48,26 @@ public class UserDAO {
             session.close();
             return false;
         }
+    }
+    public List<User> getAllUsers() {
+        Session session = HibernateUtil.getSession();
+        session.getTransaction().begin();
+        List<User> users = session.createQuery("from User", User.class).list();
+        session.getTransaction().commit();
+        session.close();
+        return users;
+    }
+    public User getUserByEmail(String email) {
+        Session session = HibernateUtil.getSession();
+        User user = null;
+        try {
+            String hql = "FROM User WHERE email = :email";
+            Query<User> query = session.createQuery(hql, User.class);
+            query.setParameter("email", email);
+            user = query.uniqueResult();
+        } finally {
+            session.close();
+        }
+        return user;
     }
 }

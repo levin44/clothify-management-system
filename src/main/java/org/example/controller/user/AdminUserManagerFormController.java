@@ -1,11 +1,17 @@
 package org.example.controller.user;
 
 import com.jfoenix.controls.JFXTextField;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
 import javafx.scene.control.*;
+import javafx.scene.control.cell.PropertyValueFactory;
 import org.example.entity.Supplier;
 import org.example.entity.User;
 import org.example.service.UserService;
+
+import java.util.List;
 
 public class AdminUserManagerFormController {
     public TableView tblProduct;
@@ -24,8 +30,9 @@ public class AdminUserManagerFormController {
     public JFXTextField removeUserIdField;
     public MenuItem menuItemUpdateAdmin;
     public MenuItem menuItemUpdateEmployee;
+    public TableView tblUser;
     private UserService userService = new UserService();
-
+    @FXML
     public void initialize() {
         //register
         menuItemAdmin.setOnAction(event -> registerRole.setText(menuItemAdmin.getText()));
@@ -33,6 +40,20 @@ public class AdminUserManagerFormController {
         //update
         menuItemUpdateAdmin.setOnAction(event -> updateRole.setText(menuItemUpdateAdmin.getText()));
         menuItemUpdateEmployee.setOnAction(event -> updateRole.setText(menuItemUpdateEmployee.getText()));
+//table
+        colUserId.setCellValueFactory(new PropertyValueFactory<>("userId"));
+        colName.setCellValueFactory(new PropertyValueFactory<>("name"));
+        colRole.setCellValueFactory(new PropertyValueFactory<>("role"));
+        colEmail.setCellValueFactory(new PropertyValueFactory<>("email"));
+
+        loadUserTable();
+    }
+
+
+    private void loadUserTable() {
+        List<User> users = userService.getAllUsers();
+        ObservableList<User> userList = FXCollections.observableArrayList(users);
+        tblUser.setItems(userList);
     }
 
     public void handleRegister(ActionEvent actionEvent) {
@@ -55,7 +76,7 @@ public class AdminUserManagerFormController {
             // Clear the fields after successful registration
             emailField.clear();
             registerRole.setText("Select Role");
-
+            loadUserTable();
         } catch (Exception e) {
             showAlert(Alert.AlertType.ERROR, "Error", "Failed to register user: " + e.getMessage());
             e.printStackTrace();
@@ -95,6 +116,7 @@ public class AdminUserManagerFormController {
             updateNameField.clear();
             updateRole.setText("Select Role");
             updateEmailField.clear();
+            loadUserTable();
         } catch (Exception e) {
             showAlert(Alert.AlertType.ERROR, "Error", "Failed to update user: " + e.getMessage());
             e.printStackTrace();
@@ -109,6 +131,7 @@ public class AdminUserManagerFormController {
             if (isDeleted) {
                 showAlert(Alert.AlertType.INFORMATION, "Success", "User removed successfully!");
                 removeUserIdField.clear();
+                loadUserTable();
             } else {
                 showAlert(Alert.AlertType.ERROR, "Error", "User not found");
             }

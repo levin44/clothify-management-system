@@ -22,7 +22,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <TableView fx:id="tblProduct" layoutX="224.0" layoutY="455.0" prefHeight="229.0" prefWidth="463.0">
+      <TableView fx:id="tblUser" layoutX="224.0" layoutY="455.0" prefHeight="229.0" prefWidth="463.0">
         <columns>
           <TableColumn fx:id="colUserId" prefWidth="115.0" text="User ID" />
             <TableColumn fx:id="colName" prefWidth="115.0" text="Name" />
@@ -35,7 +35,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="629.0" layoutY="344.0" onAction="#handleRemoveUser" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove Product" textFill="WHITE">
+      <JFXButton layoutX="629.0" layoutY="344.0" onAction="#handleRemoveUser" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Remove User" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

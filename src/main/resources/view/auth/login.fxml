@@ -9,26 +9,25 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.auth.LoginFormController">
    <children>
       <AnchorPane layoutX="398.0" layoutY="156.0" prefHeight="488.0" prefWidth="484.0" style="-fx-background-color: #d9dadb; -fx-background-radius: 50;">
          <children>
-            <JFXTextField layoutX="143.0" layoutY="179.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" />
-            <JFXTextField layoutX="143.0" layoutY="232.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" text="Password" />
+            <JFXTextField fx:id="emailField" layoutX="143.0" layoutY="179.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" />
+            <JFXTextField fx:id="passwordField" layoutX="143.0" layoutY="232.0" prefHeight="25.0" prefWidth="213.0" promptText="Password" />
             <ImageView fitHeight="50.0" fitWidth="140.0" layoutX="172.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../Clothify-in-black.png" />
                </image>
             </ImageView>
-            <Hyperlink layoutX="143.0" layoutY="276.0" fx:id="forgotPassword"  text="Forgot Password?" />
-            <JFXButton layoutX="176.0" layoutY="319.0" prefHeight="25.0" fx:id="loginButton" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Login" textFill="WHITE">
+            <Hyperlink fx:id="forgotPassword" layoutX="143.0" layoutY="276.0" text="Forgot Password?" />
+            <JFXButton fx:id="loginButton" layoutX="176.0" layoutY="319.0" onAction="#handleLogin" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Login" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
             <Label layoutX="155.0" layoutY="361.0" text="Dont have an Account?" />
-            <Hyperlink layoutX="278.0" layoutY="358.0" fx:id="createAccount" text="Sign Up" />
+            <Hyperlink fx:id="createAccount" layoutX="278.0" layoutY="358.0" text="Sign Up" />
          </children>
       </AnchorPane>
    </children>

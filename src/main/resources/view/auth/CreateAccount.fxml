@@ -13,20 +13,20 @@
    <children>
       <AnchorPane layoutX="398.0" layoutY="156.0" prefHeight="488.0" prefWidth="484.0" style="-fx-background-color: #d9dadb; -fx-background-radius: 50;">
          <children>
-            <JFXTextField layoutX="143.0" layoutY="179.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" />
-            <JFXTextField layoutX="143.0" layoutY="219.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" text="Name" />
+            <JFXTextField fx:id="emailField" layoutX="143.0" layoutY="179.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" />
+            <JFXTextField fx:id="nameField" layoutX="143.0" layoutY="219.0" prefHeight="25.0" prefWidth="213.0" promptText="Name" />
             <ImageView fitHeight="50.0" fitWidth="140.0" layoutX="172.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@../../../../../../../Clothify-in-black.png" />
                </image>
             </ImageView>
-            <JFXButton layoutX="176.0" layoutY="378.0" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Create Account" textFill="WHITE">
+            <JFXButton layoutX="176.0" layoutY="378.0" onAction="#handleCreateAccount" prefHeight="25.0" prefWidth="133.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Create Account" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </JFXButton>
-            <JFXTextField layoutX="143.0" layoutY="271.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" text="Password" />
-            <JFXTextField layoutX="143.0" layoutY="314.0" prefHeight="25.0" prefWidth="213.0" promptText="Email" text="Confirm Password" />
+            <JFXTextField fx:id="passwordField" layoutX="143.0" layoutY="271.0" prefHeight="25.0" prefWidth="213.0" promptText="Password" />
+            <JFXTextField fx:id="confirmPasswordField" layoutX="143.0" layoutY="314.0" prefHeight="25.0" prefWidth="213.0" promptText="Confirm Password" />
             <Label layoutX="181.0" layoutY="135.0" text="Create Account">
                <font>
                   <Font name="System Bold" size="18.0" />

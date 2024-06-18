@@ -5,7 +5,10 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.Pane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -30,7 +33,7 @@ public class EmployeeDashboard {
     private Pane mainContent;
 
     @FXML
-    public void handleButtonAction(ActionEvent event) {
+    public void handleButtonAction(ActionEvent event) throws IOException {
         JFXButton source = (JFXButton) event.getSource();
         String fxmlFile = "";
 
@@ -54,7 +57,10 @@ public class EmployeeDashboard {
                 fxmlFile = "/view/MyAccount.fxml"; // Update this to the correct FXML file name
                 break;
             case "logoutButton":
-                // Handle logout
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/auth/login.fxml"));
+                Parent root = loader.load();
+                Stage stage = (Stage) logoutButton.getScene().getWindow();
+                stage.setScene(new Scene(root));
                 break;
         }
 
