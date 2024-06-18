@@ -2,6 +2,7 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,7 +14,7 @@
    <children>
       <Pane layoutX="270.0" layoutY="69.0" prefHeight="731.0" prefWidth="1010.0" style="-fx-background-color: #dfe4ed;">
          <children>
-            <AnchorPane layoutX="-86.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" fx:id="mainContent"/>
+            <AnchorPane fx:id="mainContent" layoutX="-86.0" layoutY="114.0" prefHeight="200.0" prefWidth="200.0" />
          </children>
       </Pane>
       <VBox prefHeight="800.0" prefWidth="270.0">
@@ -23,7 +24,7 @@
                   <Image url="@../../../../../../Clothify.png" />
                </image>
             </ImageView>
-            <JFXButton fx:id="orderButton" maxWidth="1.7976931348623157E308" text="Order" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="orderButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Order" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -34,7 +35,7 @@
                   <Insets bottom="10.0" top="67.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="orderHistoryButton" maxWidth="1.7976931348623157E308" text="Order History" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="orderHistoryButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Order History" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -45,7 +46,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="catalogButton" maxWidth="1.7976931348623157E308" text="Catelog" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="catalogButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Catelog" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -56,7 +57,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="supplierButton" maxWidth="1.7976931348623157E308" text="Supplier" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="supplierButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Supplier" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -67,7 +68,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="reportsButton" maxWidth="1.7976931348623157E308" text="Reports" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="reportsButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Reports" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -78,7 +79,7 @@
                   <Insets bottom="10.0" />
                </VBox.margin>
             </JFXButton>
-            <JFXButton fx:id="userManagerButton" maxWidth="1.7976931348623157E308" text="User Manager" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="userManagerButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="User Manager" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -86,7 +87,7 @@
                   <Font name="Calibri Bold" size="24.0" />
                </font>
             </JFXButton>
-            <JFXButton fx:id="logoutButton" maxWidth="1.7976931348623157E308" text="Logout" textFill="WHITE" onAction="#handleButtonAction">
+            <JFXButton fx:id="logoutButton" maxWidth="1.7976931348623157E308" onAction="#handleButtonAction" text="Logout" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -99,5 +100,10 @@
             </JFXButton>
          </children>
       </VBox>
+      <Label fx:id="welcomeLabel" layoutX="947.0" layoutY="14.0" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
    </children>
 </Pane>

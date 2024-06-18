@@ -13,7 +13,7 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <JFXButton layoutX="53.0" layoutY="321.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Password" textFill="WHITE">
+      <JFXButton layoutX="53.0" layoutY="321.0" onAction="#handleUpdatePassword" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Update Password" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -23,8 +23,8 @@
             <Font size="21.0" />
          </font>
       </Label>
-      <JFXTextField layoutX="53.0" layoutY="170.0" promptText="Old Password" />
-      <JFXTextField layoutX="53.0" layoutY="215.0" promptText="New Password" />
-      <JFXTextField layoutX="53.0" layoutY="265.0" promptText="Confirm New Password" />
+      <JFXTextField fx:id="oldPassField" layoutX="53.0" layoutY="170.0" promptText="Old Password" />
+      <JFXTextField fx:id="newPassField" layoutX="53.0" layoutY="215.0" promptText="New Password" />
+      <JFXTextField fx:id="confirmNewPassField" layoutX="53.0" layoutY="265.0" promptText="Confirm New Password" />
    </children>
 </AnchorPane>

@@ -10,6 +10,9 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import org.example.UserContext;
+import org.example.controller.dashboard.AdminDashboard;
+import org.example.controller.dashboard.EmployeeDashboard;
 import org.example.entity.User;
 import org.example.service.UserService;
 import org.mindrot.jbcrypt.BCrypt;
@@ -80,16 +83,24 @@ public class LoginFormController {
                 showAlert(Alert.AlertType.ERROR, "Login Failed", "Invalid password");
                 return;
             }
-
-            showAlert(Alert.AlertType.INFORMATION, "Login Successful", "Welcome, " + user.getEmail());
+            UserContext.getInstance().setCurrentUser(user);
+//            showAlert(Alert.AlertType.INFORMATION, "Login Successful", "Welcome, " + user.getEmail());
             if (user.getRole().equals("admin")){
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/AdminDashboard.fxml"));
                 Parent root = loader.load();
+//pass user to admin controller
+                AdminDashboard dashboardController = loader.getController();
+                dashboardController.setUser(user);
+
                 Stage stage = (Stage) loginButton.getScene().getWindow();
                 stage.setScene(new Scene(root));
             }else{
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/EmployeeDashboard.fxml"));
                 Parent root = loader.load();
+//pass user to employee controller
+                EmployeeDashboard dashboardController = loader.getController();
+                dashboardController.setUser(user);
+
                 Stage stage = (Stage) loginButton.getScene().getWindow();
                 stage.setScene(new Scene(root));
             }

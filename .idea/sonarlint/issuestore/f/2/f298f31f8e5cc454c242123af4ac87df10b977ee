@@ -1,0 +1,14 @@
+
+‚
+java:S1118":Add a private constructor to hide the implicit public one.(Íñºïıÿÿÿÿ8ÛÆºÜ‚2J$db56597d-f705-4c8b-a588-f81a9b4557bd
+ƒ	java:S125"<This block of commented-out lines of code should be removed.(€å§èÿÿÿÿÿ8—Š•º‚2J$d9ea81b8-cbde-4371-91e1-a114fdcd44ac
+{
+java:S1874%"3Remove this use of "createQuery"; it is deprecated.(ßêÁìûÿÿÿÿ8÷í¤Ü‚2J$1a85b003-fa13-4915-8d0b-7656f986b16e
+†
+java:S1128">Remove this unused import 'jakarta.persistence.EntityManager'.(·ïŸéúÿÿÿÿ8÷§¬¼‚2J$3d175e37-ad76-41bd-a1a6-40c4f95a7081
+
+java:S1128"ERemove this unused import 'jakarta.persistence.EntityManagerFactory'.(‹ ñºûÿÿÿÿ8÷§¬¼‚2J$2765c7d4-1514-41b3-8f20-11d4a5e31918
+„
+java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8÷§¬¼‚2J$a0a2f9b9-9a8a-4144-8258-d1c0d6375d9c
+€
+java:S1128"8Remove this unused import 'org.example.entity.Supplier'.(Ã×€ğıÿÿÿÿ8÷§¬¼‚2J$3a8fca1c-683e-458f-9a07-8ccbe57e4282

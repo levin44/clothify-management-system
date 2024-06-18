@@ -1,0 +1,64 @@
+
+w
+java:S3740"/Provide the parametrized type for this generic.(¯©„úÿÿÿÿ8ò¤ºŞ‚2J$38437cb7-e170-4e3c-85f6-ab14b58391ad
+r
+java:S3740"/Provide the parametrized type for this generic.(³şœî8˜İºŞ‚2J$be5e8a29-bb45-470c-82fa-71147bfad84b
+w
+java:S3740"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8ÖüºŞ‚2J$2de39995-7a2c-4627-a45d-c1b476032e37
+r
+java:S3740"/Provide the parametrized type for this generic.(ƒäÆ8¿»Ş‚2J$abea32e6-ea53-473f-a929-aa12c1578c63
+r
+java:S3740"/Provide the parametrized type for this generic.(ú¶øõ8Â¾»Ş‚2J$bbe38fe7-fa29-47ed-a4d5-f78f9a4c8bb3
+w
+java:S3740!"/Provide the parametrized type for this generic.(¢Ç„øÿÿÿÿ8’éîà‚2J$395b1515-be4f-4e72-bc63-c286fffcb9b8
+
+java:S1192@"LDefine a constant instead of duplicating this literal "Select Role" 3 times.(ûÁëˆ8«©Şà‚2J$65e6a6ae-1ff3-459b-8cb9-cd4a390f65da
+‰
+java:S1192Q"FDefine a constant instead of duplicating this literal "Error" 6 times.(•ÿµ€8«©Şà‚2J$b5eda980-d147-4707-83e6-8fb9d1b2bb9b
+
+java:S1192J"HDefine a constant instead of duplicating this literal "Success" 3 times.(ê–•®úÿÿÿÿ8«©Şà‚2J$548b51bc-c993-4c19-95bc-70605b64db4a
+
+java:S1104"VMake tblProduct a static final constant or non-public and provide accessors if needed.(¯©„úÿÿÿÿ8ô¤ºŞ‚2J$fd36880b-80dc-41af-9b63-a3e1e4ea87f1
+˜
+java:S1104"UMake colUserId a static final constant or non-public and provide accessors if needed.(³şœî8™İºŞ‚2J$add61a58-bc76-4b7d-81c7-2b7d813216af
+›
+java:S1104"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8ØüºŞ‚2J$a60a7aee-461c-4b8e-9c79-708ae6594d2e
+—
+java:S1104"TMake colEmail a static final constant or non-public and provide accessors if needed.(ƒäÆ8Á»Ş‚2J$b4ee9f5a-8676-4e29-b976-f348624fd34d
+–
+java:S1104"SMake colRole a static final constant or non-public and provide accessors if needed.(ú¶øõ8Ä¾»Ş‚2J$a4f45bc6-3704-41c7-8a24-4eabe2011b2e
+
+java:S1104"VMake emailField a static final constant or non-public and provide accessors if needed.(ÑäÇÏşÿÿÿÿ8ª•½Ş‚2J$ddc1bc2d-637d-41cd-95e2-3df001c7ee48
+ 
+java:S1104"]Make updateUserIdField a static final constant or non-public and provide accessors if needed.(òÿ¢ÿ8ÃÇ½Ş‚2J$9eec93be-4226-41e1-9833-8df80ae0090e
+Ÿ
+java:S1104"\Make updateEmailField a static final constant or non-public and provide accessors if needed.(ö®‘‘8Şğ½Ş‚2J$a362dbb1-fb6f-4fd3-b455-6cc5c85aa3d6
+£
+java:S1104"[Make updateNameField a static final constant or non-public and provide accessors if needed.(³Øï¾şÿÿÿÿ8›¾Ş‚2J$8c641ff6-45eb-4ef0-8459-a165952f0a58
+›
+java:S1104"XMake registerRole a static final constant or non-public and provide accessors if needed.(Ãçİõ8†Õ¾Ş‚2J$517cd270-3be8-45ce-b94c-35e81231294c
+¡
+java:S1104"YMake menuItemAdmin a static final constant or non-public and provide accessors if needed.(ÄÌï‚üÿÿÿÿ8´ÀŞ‚2J$6763210d-6d83-4c2a-8ff8-5c4a85de1ad3
+¤
+java:S1104"\Make menuItemEmployee a static final constant or non-public and provide accessors if needed.(×ÕÌˆÿÿÿÿÿ8¦»ÀŞ‚2J$54644af9-4f3f-4407-a1f7-b66997098672
+™
+java:S1104"VMake updateRole a static final constant or non-public and provide accessors if needed.(Ş‹”Ø8¥¤ÁŞ‚2J$c2ee373e-2b2e-4229-9227-08610622a114
+¥
+java:S1104"]Make removeUserIdField a static final constant or non-public and provide accessors if needed.( §Úªøÿÿÿÿ8‘—ÂŞ‚2J$914d67ea-675e-4086-9ce3-9b29802cd4c2
+¢
+java:S1104"_Make menuItemUpdateAdmin a static final constant or non-public and provide accessors if needed.(íş·¬8Ì¯ãß‚2J$c9a00888-a9ce-4ac1-8d3d-493a9bccdb7a
+ª
+java:S1104 "bMake menuItemUpdateEmployee a static final constant or non-public and provide accessors if needed.(ñ±Ãôÿÿÿÿÿ8ËÓãß‚2J$c8702bbf-3c5f-403c-ab10-45deeb82663f
+›
+java:S1104!"SMake tblUser a static final constant or non-public and provide accessors if needed.(¢Ç„øÿÿÿÿ8–éîà‚2J$a4d49845-23a5-4b4a-99ec-0970814e13a0
+t
+java:S1172;"2Remove this unused method parameter "actionEvent".(Íí8ã®áà‚2J$580ac109-5b94-494e-bb2f-3bcdcb84b2f8
+u
+java:S1172]"2Remove this unused method parameter "actionEvent".(‘Ä®8ç®áà‚2J$3468c3f6-595e-450a-8038-1915c5d1e989
+u
+java:S1172~"2Remove this unused method parameter "actionEvent".(Ú†ÓÕ8ê®áà‚2J$c3f23b26-4a28-4e55-9459-de0d8d36d61a
+v
+java:S1172"2Remove this unused method parameter "actionEvent".(¡Ñûç8ì®áà‚2J$ee12f85a-647f-44dd-a95a-61a10592f736
+Z
+java:S1128
+"8Remove this unused import 'org.example.entity.Supplier'.(Ã×€ğıÿÿÿÿ8‡úÌã‚2

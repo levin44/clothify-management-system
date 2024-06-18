@@ -1,0 +1,73 @@
+
+w
+java:S3740"/Provide the parametrized type for this generic.(¯©„úÿÿÿÿ8º×êè2J$c711cbda-e39b-4951-aa67-374b50ef4681
+w
+java:S3740"/Provide the parametrized type for this generic.(º°Çşûÿÿÿÿ8»×êè2J$9be76c96-b43f-46a5-97e0-1e4e8fc93de6
+w
+java:S3740"/Provide the parametrized type for this generic.(ÊÚÎ¨ùÿÿÿÿ8»×êè2J$d432f43e-27a3-4a3e-b36c-2f51fc4bf3bd
+r
+java:S3740"/Provide the parametrized type for this generic.(«–Ê8»×êè2J$d0c8a134-d592-4b88-9431-6b6f7a34cb2f
+w
+java:S3740"/Provide the parametrized type for this generic.(ıàİËşÿÿÿÿ8»×êè2J$4c37e707-ed92-48d9-8d01-d338d174ae99
+r
+java:S3740"/Provide the parametrized type for this generic.(Æ¦Œê8»×êè2J$9f3167d2-bc75-464c-9ac5-4661cd1556ad
+w
+java:S3740"/Provide the parametrized type for this generic.(·§İñüÿÿÿÿ8»×êè2J$b0323e67-d36b-4aaa-a4fe-2849a0ec15ff
+r
+java:S3740"/Provide the parametrized type for this generic.(´Œò«8»×êè2J$d6e196ae-d2b4-428e-85c5-5248bbf550d5
+
+java:S1192^"FDefine a constant instead of duplicating this literal "Error" 6 times.(Ø¯÷œùÿÿÿÿ8¼×êè2J$adff4671-7341-411d-8a28-a80ed45a9928
+
+java:S1192N"HDefine a constant instead of duplicating this literal "Success" 3 times.(Ã»Åƒıÿÿÿÿ8¼×êè2J$9815a890-90fe-4a48-99fc-f3e7a4f862f3
+
+java:S1104"VMake tblProduct a static final constant or non-public and provide accessors if needed.(¯©„úÿÿÿÿ8¾×êè2J$c7238a30-4477-4665-bc13-82559c5f11bd
+ 
+java:S1104"XMake colProductId a static final constant or non-public and provide accessors if needed.(º°Çşûÿÿÿÿ8¾×êè2J$f115bfd9-7dfe-4f17-a2d3-2b5296c014df
+›
+java:S1104"SMake colName a static final constant or non-public and provide accessors if needed.(ÊÚÎ¨ùÿÿÿÿ8¾×êè2J$a02346f4-d1b2-498e-9f93-3bec46d39093
+–
+java:S1104"SMake colSize a static final constant or non-public and provide accessors if needed.(«–Ê8¾×êè2J$edf23fcc-64ce-4110-af29-aa460979c751
+Ÿ
+java:S1104"WMake colQuantity a static final constant or non-public and provide accessors if needed.(ıàİËşÿÿÿÿ8¾×êè2J$40a8bebb-43fa-4c29-bbec-17a5e93f4020
+—
+java:S1104"TMake colPrice a static final constant or non-public and provide accessors if needed.(Æ¦Œê8¾×êè2J$e8f0f145-eac0-410d-8e41-593b92ea6232
+Ÿ
+java:S1104"WMake colCategory a static final constant or non-public and provide accessors if needed.(·§İñüÿÿÿÿ8¾×êè2J$13c75ac1-8e01-4266-9aed-32041bc83974
+š
+java:S1104"WMake colSupplier a static final constant or non-public and provide accessors if needed.(´Œò«8¾×êè2J$b9868e17-3360-4af3-b4ea-382c544aff73
+
+java:S1104"ZMake productIdField a static final constant or non-public and provide accessors if needed.(·åÓ´8¾×êè2J$bc6aa24a-fff0-4331-904f-788c58c7db89
+˜
+java:S1104"UMake nameField a static final constant or non-public and provide accessors if needed.(ê‡âæ8¾×êè2J$bc5a758b-fafa-49bc-a465-db37b3a6ad2a
+˜
+java:S1104"UMake sizeField a static final constant or non-public and provide accessors if needed.(å»£©8¾×êè2J$ca52abe8-1fef-49a3-b124-3989b1b2b7ad
+œ
+java:S1104"YMake quantityField a static final constant or non-public and provide accessors if needed.(ÉáèÊ8¾×êè2J$f6d5d8fc-34a6-4ca1-888b-c0086728bc43
+¡
+java:S1104"YMake catagoryField a static final constant or non-public and provide accessors if needed.(Ñïı…úÿÿÿÿ8¾×êè2J$0a37c79f-e38d-4841-ac27-e6e45ce95f85
+
+java:S1104"VMake priceField a static final constant or non-public and provide accessors if needed.(úÂâåÿÿÿÿÿ8¾×êè2J$c0439aa6-6c45-4bcd-9384-37d6d722b40e
+œ
+java:S1104 "YMake supplierField a static final constant or non-public and provide accessors if needed.(‹”€Ù8¾×êè2J$70c26945-e3ab-4079-8de1-d97d4725ab6f
+Ä
+java:S1186j"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(…Ñéú8ü×êè2J$61f85c9c-67f6-42ae-9a32-28039fbd6035
+Ê
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Úœ¨‰øÿÿÿÿ8ı×êè2J$3369330f-8421-4795-9b07-05a6e0003f53
+Ê
+java:S1186 "€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ô°ò‘ıÿÿÿÿ8ı×êè2J$f5bdd24d-4c0f-4389-92fb-4cc8b63eae7d
+Ä
+java:S1186£"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÔàQ8ı×êè2J$b1fcf9d4-0813-4904-8c50-25278d93871a
+Ê
+java:S1186¸"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(‹¦†èşÿÿÿÿ8ı×êè2J$b251d7d3-75e0-457f-b91f-360e09cfc7ec
+Ä
+java:S1186Ò"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Íí8Ô­Ş‚2J$867f9603-b4ed-44a1-80b5-e1e06c1a03ed
+m	java:S1063"+Replace this use of System.out by a logger.(¨”Ğÿ8‹Øêè2J$f744705b-e924-4d5c-a5e7-41c8f843dbaf
+z
+java:S11726"2Remove this unused method parameter "actionEvent".(Û›Èıÿÿÿÿ8ŒØêè2J$961ac681-c5ce-43f8-97cb-3e8566eedca7
+z
+java:S1172m"2Remove this unused method parameter "actionEvent".(î®Õ»ûÿÿÿÿ8“Øêè2J$9d92e6cb-9213-4f66-b3de-fb9d791fb797
+}	java:S125y"<This block of commented-out lines of code should be removed.(ı«N8•Øêè2J$dbaa516b-4d2b-43d8-8343-2696f318cf2b
+v
+java:S1172¦"2Remove this unused method parameter "actionEvent".(Ÿ¸•á8—Øêè2J$eb6d153d-5710-4ee4-bc22-40a189b5bec4
+v
+java:S1172»"2Remove this unused method parameter "actionEvent".(ô£½ğ8™Øêè2J$f0eed7a6-ac35-4158-a69b-8bbb31182c81

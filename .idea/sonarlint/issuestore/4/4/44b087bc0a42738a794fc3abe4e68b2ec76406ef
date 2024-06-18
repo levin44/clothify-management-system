@@ -1,0 +1,16 @@
+
+¡
+java:S1104"YMake returnToLogin a static final constant or non-public and provide accessors if needed.(¿‘ªªúÿÿÿÿ8¬Ð™â‚2J$5f2f25ed-c5cb-40e8-b020-068defe0efb2
+ž
+java:S1104"VMake emailField a static final constant or non-public and provide accessors if needed.(ÑäÇÏþÿÿÿÿ8¬Ð™â‚2J$016b646d-8b60-4351-8b6e-b3f98de49903
+˜
+java:S1104"UMake nameField a static final constant or non-public and provide accessors if needed.(ê‡âæ8¬Ð™â‚2J$6251f759-986c-4c72-886c-af26a5aaef91
+œ
+java:S1104"YMake passwordField a static final constant or non-public and provide accessors if needed.(ëº¶¹8¬Ð™â‚2J$a0cbf17f-bdea-4079-8c71-79d285f6c847
+£
+java:S1104"`Make confirmPasswordField a static final constant or non-public and provide accessors if needed.(ßÙæ»8¬Ð™â‚2J$3d886877-15ff-4d35-a85d-20eb057b5111
+z
+java:S1172+"2Remove this unused method parameter "actionEvent".(¸½âüþÿÿÿÿ8ÐÐ™â‚2J$6bc165c2-5c1f-4d45-8706-10443a3ded91
+~	java:S1252"<This block of commented-out lines of code should be removed.(þ×Æ«8ÒÐ™â‚2J$9d6e3f45-311c-4426-a6fd-b9caea54e720
+q
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8ê¾µâ‚2J$173a7136-e5b9-464c-bcd8-fa2af4601519

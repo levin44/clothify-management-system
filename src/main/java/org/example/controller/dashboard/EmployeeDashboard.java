@@ -7,8 +7,10 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import org.example.entity.User;
 
 import java.io.IOException;
 import java.net.URL;
@@ -29,9 +31,15 @@ public class EmployeeDashboard {
     public JFXButton myAccountButton;
     @FXML
     public JFXButton logoutButton;
+    public Label welcomeLabel;
     @FXML
     private Pane mainContent;
 
+    private User currentUser;
+    public void setUser(User user) {
+        this.currentUser = user;
+        welcomeLabel.setText("Welcome, " + currentUser.getName() + "!");
+    }
     @FXML
     public void handleButtonAction(ActionEvent event) throws IOException {
         JFXButton source = (JFXButton) event.getSource();
