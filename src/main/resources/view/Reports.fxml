@@ -12,17 +12,17 @@
             <Font size="32.0" />
          </font>
       </Label>
-      <JFXButton layoutX="71.0" layoutY="171.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Inventory Report" textFill="WHITE">
+      <JFXButton layoutX="71.0" layoutY="171.0" onAction="#printInventoryReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Inventory Report" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="71.0" layoutY="246.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Employee Report" textFill="WHITE">
+      <JFXButton layoutX="71.0" layoutY="246.0" onAction="#printEmployeeReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Employee Report" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="71.0" layoutY="321.0" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Supplier Report" textFill="WHITE">
+      <JFXButton layoutX="71.0" layoutY="321.0" onAction="#printSupplierReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Supplier Report" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

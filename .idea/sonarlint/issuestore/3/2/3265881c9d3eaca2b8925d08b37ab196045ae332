@@ -1,3 +1,15 @@
 
-Š
-java:S2094"BRemove this empty class, write its code or make it an "interface".(µßÔ–ûÿÿÿÿ8ÛæËÄ€2J$476cf62c-3c10-4084-b17a-f6dcd6f5ef50
+É
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ðÅÝÍÿÿÿÿÿ8Ùîô„…2J$e623e7e5-dbde-42dd-9b44-62c310bab7dd
+Ä
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ðä²Ç8Ð˜õ„…2J$6241da36-9a5d-4bcf-be43-b623e1efdc95
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(ŠîÀ¢8•Çƒ……2J$b32748d9-a319-48d7-a227-708f6beab0bc
+`
+java:S1128"Remove this duplicated import.(„•£8Ÿ¾Ò……2J$50b1988d-21c9-4ddd-9283-67a9b23a1ed9
+`
+java:S1128"Remove this duplicated import.(„•£8µÉÚ……2J$c90bb34f-94ef-4a8a-8d5e-f340604433e1
+f
+java:S1128"Remove this duplicated import.(î•¯¼ýÿÿÿÿ8Ïš………2J$3c1e2202-ffc2-48d6-aa96-07ea0f5d052b
+a
+java:S1128"Remove this duplicated import.(òˆ©Û8Ïš………2J$468f823a-8cc6-4354-9816-4e4c0e479571
