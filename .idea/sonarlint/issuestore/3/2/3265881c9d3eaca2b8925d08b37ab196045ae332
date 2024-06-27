@@ -1,15 +1,29 @@
 
-É
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ğÅİÍÿÿÿÿÿ8Ùîô„…2J$e623e7e5-dbde-42dd-9b44-62c310bab7dd
-Ä
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ğä²Ç8Ğ˜õ„…2J$6241da36-9a5d-4bcf-be43-b623e1efdc95
+“
+java:S11927"QDefine a constant instead of duplicating this literal "Inventory Report" 3 times.(—ğì|8şÁ¯Ì…2J$6c743fca-b2f0-4899-a345-646e82ecbe95
+
+java:S11927"LDefine a constant instead of duplicating this literal "ReportTitle" 3 times.(—ğì|8ÿÁ¯Ì…2J$d7d6e843-1768-4980-84e3-b89de92af682
+Ÿ
+java:S1192*"WDefine a constant instead of duplicating this literal "Report file not found." 4 times.(ñŸš­øÿÿÿÿ8ÿÁ¯Ì…2J$224862da-0c9a-4b05-bb29-f51cb1039797
+z
+java:S1172%"2Remove this unused method parameter "actionEvent".(ğÅİÍÿÿÿÿÿ8•Â¯Ì…2J$26d14f2b-9966-4f9e-ad72-3c2f93d2e94e
 u
-java:S1172"2Remove this unused method parameter "actionEvent".(ŠîÀ¢8•Çƒ……2J$b32748d9-a319-48d7-a227-708f6beab0bc
+java:S1172E"2Remove this unused method parameter "actionEvent".(Ğä²Ç8›Â¯Ì…2J$eee083e1-281a-455a-b221-fd4845945591
+u
+java:S1172e"2Remove this unused method parameter "actionEvent".(ŠîÀ¢8Â¯Ì…2J$879a5096-4435-475f-b2ea-902ed63567f0
+‰
+java:S1854"@Remove this useless assignment to local variable "jasperReport".(’÷½ñşÿÿÿÿ8¯æùÔ…2J$a8db2a4f-1a02-4633-9b1e-acc38c8e9205
+£
+java:S1172…"ZRemove these unused method parameters "actionEvent", "reportType", "startDate", "endDate".(Û¾•’şÿÿÿÿ8ŸÂ¯Ì…2J$feebf738-4433-4dd2-a53e-190c2ea567eb
+z
+java:S1481"1Remove this unused "jasperReport" local variable.(’÷½ñşÿÿÿÿ8±æùÔ…2J$9746b53d-58af-4e79-8522-16f758a19e0f
+~	java:S125"<This block of commented-out lines of code should be removed.(–áÁ=8ÎÉøÔ…2J$fcd0500a-1143-4b4f-a488-d070abed820b
+„	java:S125 "<This block of commented-out lines of code should be removed.(Â™†„ùÿÿÿÿ8³æùÔ…2J$df8f96c6-cbb4-42b1-a9b2-031b31a2c3a4
 `
-java:S1128"Remove this duplicated import.(„•£8Ÿ¾Ò……2J$50b1988d-21c9-4ddd-9283-67a9b23a1ed9
+java:S1128"Remove this duplicated import.(„•£8¤Â¯Ì…2J$27c88573-d96e-48c6-a4ea-121b02393c5f
 `
-java:S1128"Remove this duplicated import.(„•£8µÉÚ……2J$c90bb34f-94ef-4a8a-8d5e-f340604433e1
+java:S1128"Remove this duplicated import.(„•£8§ËúÔ…2J$372948ac-6543-4861-8e9d-caf5f125fb62
 f
-java:S1128"Remove this duplicated import.(î•¯¼ıÿÿÿÿ8Ïš………2J$3c1e2202-ffc2-48d6-aa96-07ea0f5d052b
+java:S1128"Remove this duplicated import.(î•¯¼ıÿÿÿÿ8¤Â¯Ì…2J$35800c22-519e-4296-a3c3-c6bdc4ef2095
 a
-java:S1128"Remove this duplicated import.(òˆ©Û8Ïš………2J$468f823a-8cc6-4354-9816-4e4c0e479571
+java:S1128"Remove this duplicated import.(òˆ©Û8¤Â¯Ì…2J$62ade2e1-be48-4af8-997a-8eff47c5fe5c

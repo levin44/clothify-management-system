@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.reports.ReportFormController">
+   <children>
+      <Label layoutX="71.0" layoutY="49.0" text="Reports">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="71.0" layoutY="247.0" onAction="#printInventoryReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Inventory Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="394.0" layoutY="247.0" onAction="#printEmployeeReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Employee Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="701.0" layoutY="241.0" onAction="#printSupplierReport" prefHeight="45.0" prefWidth="183.0" style="-fx-background-color: black; -fx-background-radius: 10;" text="Print Supplier Report" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+      <HBox layoutX="71.0" layoutY="186.0" spacing="10">
+         <Label text="Report Type:" />
+         <ComboBox fx:id="reportTypeComboBox">
+            <items>
+               <FXCollections fx:factory="observableArrayList">
+                  <String fx:value="daily" />
+                  <String fx:value="monthly" />
+                  <String fx:value="annually" />
+               </FXCollections>
+            </items>
+         </ComboBox>
+         <Label text="Start Date:" />
+         <DatePicker fx:id="startDatePicker" />
+         <Label text="End Date:" />
+         <DatePicker fx:id="endDatePicker" />
+         <JFXButton onAction="#generateSalesReport" text="Generate Report" />
+      </HBox>
+      <Label layoutX="71.0" layoutY="139.0" text="Generate Sales Report">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -63,7 +63,7 @@ public class AdminDashboard {
                 fxmlFile = "/view/Supplier.fxml"; // Update this to the correct FXML file name
                 break;
             case "reportsButton":
-                fxmlFile = "/view/Reports.fxml"; // Update this to the correct FXML file name
+                fxmlFile = "/view/AdminReports.fxml"; // Update this to the correct FXML file name
                 break;
             case "userManagerButton":
                 fxmlFile = "/view/AdminUserManger.fxml"; // Update this to the correct FXML file name
