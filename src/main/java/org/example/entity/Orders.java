@@ -50,7 +50,7 @@ public class Orders {
     }
 
     public StringProperty employeeNameProperty() {
-        return new SimpleStringProperty(user.getName());
+        return new SimpleStringProperty(user != null ? user.getName() : "N/A");
     }
 
     public StringProperty customerNameProperty() {

@@ -1,6 +1,8 @@
 package org.example.entity;
 
 import jakarta.persistence.*;
+import javafx.beans.property.SimpleStringProperty;
+import javafx.beans.property.StringProperty;
 import lombok.*;
 
 import java.util.List;
@@ -30,5 +32,9 @@ public class Product {
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderDetails> orderDetails;
+
+    public StringProperty supplierNameProperty() {
+        return new SimpleStringProperty(supplier != null ? supplier.getName() : "N/A");
+    }
 
 }

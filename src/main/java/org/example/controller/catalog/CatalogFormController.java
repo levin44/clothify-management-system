@@ -41,7 +41,7 @@ public class CatalogFormController {
         colQuantity.setCellValueFactory(new PropertyValueFactory<>("quantity"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
         colCategory.setCellValueFactory(new PropertyValueFactory<>("category"));
-        colSupplier.setCellValueFactory(new PropertyValueFactory<>("supplier"));
+        colSupplier.setCellValueFactory(new PropertyValueFactory<>("supplierName"));
 
         loadProductTable();
     }
