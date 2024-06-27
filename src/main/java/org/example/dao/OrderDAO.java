@@ -7,20 +7,11 @@ import org.example.entity.Orders;
 import org.example.entity.Supplier;
 import org.example.util.HibernateUtil;
 import org.hibernate.Session;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class OrderDAO {
-//    private EntityManagerFactory emf = Persistence.createEntityManagerFactory("example-unit");
-//
-//    public void save(Orders order) {
-//        EntityManager em = emf.createEntityManager();
-//        try {
-//            em.getTransaction().begin();
-//            em.persist(order);
-//            em.getTransaction().commit();
-//        } finally {
-//            em.close();
-//        }
-//    }
 
     public static boolean saveOrder(Orders orders) {
         Session session = HibernateUtil.getSession();
@@ -37,5 +28,12 @@ public class OrderDAO {
         Long count = (Long) session.createQuery("SELECT COUNT(o) FROM Orders o").uniqueResult();
         session.close();
         return count.intValue();
+    }
+    public List<Orders> getAllOrders() {
+        Session session = HibernateUtil.getSession();
+        Query<Orders> query = session.createQuery("FROM Orders", Orders.class);
+        List<Orders> orders = query.getResultList();
+        session.close();
+        return orders;
     }
 }

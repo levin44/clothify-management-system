@@ -8,14 +8,14 @@
 
 <AnchorPane prefHeight="800.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.orderhistory.OrderHistoryFormController">
     <children>
-        <TableView layoutX="180.0" layoutY="159.0" prefHeight="229.0" prefWidth="612.0">
+        <TableView fx:id="tblOrderHistory" layoutX="180.0" layoutY="159.0" prefHeight="229.0" prefWidth="692.0">
             <columns>
-                <TableColumn prefWidth="35.0" />
-                <TableColumn prefWidth="115.0" text="Order Id" />
-                <TableColumn prefWidth="115.0" text="Product" />
-                <TableColumn prefWidth="115.0" text="Unit Price" />
-                <TableColumn prefWidth="115.0" text="Quantity" />
-                <TableColumn prefWidth="115.0" text="Price" />
+                <TableColumn fx:id="colOrderId" prefWidth="115.0" text="Order Id" />
+                <TableColumn fx:id="colPaymentType" prefWidth="115.0" text="Payment Type" />
+                <TableColumn fx:id="colTotalCost" prefWidth="115.0" text="Total Cost" />
+                <TableColumn fx:id="colDate" prefWidth="115.0" text="Date" />
+                <TableColumn fx:id="colEmployee" prefWidth="115.0" text="Employee" />
+            <TableColumn fx:id="colCustomer" prefWidth="115.0" text="Customer" />
             </columns>
         </TableView>
         <Label layoutX="53.0" layoutY="48.0" text="Order History">

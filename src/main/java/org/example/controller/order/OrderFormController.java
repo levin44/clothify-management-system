@@ -1,6 +1,9 @@
 package org.example.controller.order;
 
 import com.jfoenix.controls.JFXTextField;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -9,6 +12,8 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.util.Duration;
+import org.example.UserContext;
 import org.example.entity.*;
 import org.example.service.CustomerService;
 import javafx.scene.control.Alert.AlertType;
@@ -16,6 +21,11 @@ import org.example.service.OrderService;
 import org.example.service.ProductService;
 
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+
+import java.time.LocalTime;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
@@ -36,7 +46,8 @@ public class OrderFormController {
     public TableColumn colPrice;
     public Label lblTotal;
     public Label lblOrderId;
-
+    public Label lblDate;
+    public Label lblTime;
 
     private CustomerService customerService = new CustomerService();
     private ProductService productService = new ProductService();
@@ -44,8 +55,11 @@ public class OrderFormController {
 
     Product product;
 
-
+    User username;
     public void initialize() {
+        loadDateAndTime();
+        User currentUser = UserContext.getInstance().getCurrentUser();
+        username=currentUser;
 
         colProductId.setCellValueFactory(new PropertyValueFactory<>("productId"));
         colProduct.setCellValueFactory(new PropertyValueFactory<>("productName"));
@@ -56,7 +70,25 @@ public class OrderFormController {
         lblOrderId.setText(orderService.generateOrderId());
 
     }
+    private void loadDateAndTime() {
+        //Date
+        Date date = new Date();
+        SimpleDateFormat f = new SimpleDateFormat("yyyy-MM-dd");
+        lblDate.setText(f.format(date));
 
+
+        //Time
+        Timeline timeline = new Timeline(new KeyFrame(Duration.ZERO, e -> {
+            LocalTime time = LocalTime.now();
+            lblTime.setText(
+                    time.getHour() + " : " + time.getMinute() + " : " + time.getSecond()
+            );
+        }),
+                new KeyFrame(Duration.seconds(1))
+        );
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+    }
     public void handleAddCustomer(ActionEvent actionEvent) {
         try {
             String customerPhone = customerPhoneField.getText();
@@ -133,6 +165,8 @@ public class OrderFormController {
         try {
             String orderId = lblOrderId.getText();
             String customerPhone = customerPhoneField.getText();
+            DateFormat format = new SimpleDateFormat("yyyy-MM-dd");
+            Date orderDate = format.parse(lblDate.getText());
 
             if (customerPhone.isEmpty() || cartList.isEmpty()) {
                 showAlert(AlertType.ERROR, "Form Error!", "Please fill in customer details and add products to the cart");
@@ -146,8 +180,10 @@ public class OrderFormController {
             }
 
             Orders order = new Orders();
+            order.setOrderDate(orderDate);
             order.setOrderId(orderId);
             order.setCustomer(customer);
+            order.setUser(username);
             order.setPaymentType("Credit Card"); // This is an example, set the appropriate payment type
             order.setTotalCost(cartList.stream().mapToDouble(CartTbl::getTotal).sum());
 

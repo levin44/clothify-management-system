@@ -1,9 +1,6 @@
 
-k
-java:S2440"(Remove this instantiation of "OrderDAO".(çÄ®–8àΩ»ºÇ2J$f718f40e-d744-49bd-9a0e-3b9ab57d5de9
-~	java:S125
-"<This block of commented-out lines of code should be removed.(¨ÇÆ8ÄÃ≠ºÇ2J$4bb138b1-4cce-4690-b8e6-fd23f463b68c
-Ä
-java:S1128"8Remove this unused import 'org.example.entity.Supplier'.(√◊Ä˝ˇˇˇˇ8Ó∑¯‹Ç2J$a6d2ac9b-c49b-4d73-a7a3-105a24ed14be
+Z
+java:S1128"8Remove this unused import 'org.example.entity.Supplier'.(√◊Ä˝ˇˇˇˇ8˙íùÿÖ2
 v
-java:S1068"3Remove this unused "orderRepository" private field.(çÄ®–8ÅÃ≠ºÇ2J$303f2d7f-802c-4fa7-b9b8-b694c796b05f
+java:S1068
+"3Remove this unused "orderRepository" private field.(çÄ®–8ÅÃ≠ºÇ2J$76d6a550-2769-40bb-95a3-4c437c173547

@@ -1,8 +1,10 @@
 package org.example.entity;
 
 import jakarta.persistence.*;
+import javafx.beans.property.*;
 import lombok.*;
 
+import java.util.Date;
 import java.util.List;
 
 @Entity
@@ -17,6 +19,7 @@ public class Orders {
 
     private String paymentType;
     private Double totalCost;
+    private Date orderDate;
 
     @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "user_id")
@@ -28,4 +31,29 @@ public class Orders {
 
     @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<OrderDetails> orderDetails;
+
+    // JavaFX properties
+    public StringProperty orderIdProperty() {
+        return new SimpleStringProperty(orderId);
+    }
+
+    public StringProperty paymentTypeProperty() {
+        return new SimpleStringProperty(paymentType);
+    }
+
+    public DoubleProperty totalCostProperty() {
+        return new SimpleDoubleProperty(totalCost);
+    }
+
+    public ObjectProperty<Date> orderDateProperty() {
+        return new SimpleObjectProperty<>(orderDate);
+    }
+
+    public StringProperty employeeNameProperty() {
+        return new SimpleStringProperty(user.getName());
+    }
+
+    public StringProperty customerNameProperty() {
+        return new SimpleStringProperty(customer.getName());
+    }
 }

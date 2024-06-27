@@ -1,62 +1,66 @@
 
 r
-java:S3740"/Provide the parametrized type for this generic.(Şâê8ŠºÑÜ‚2J$a8d005c9-b5c8-43d7-9ac6-171f00743b3f
+java:S3740)"/Provide the parametrized type for this generic.(Şâê8¸¶îÖ…2J$c8003002-25eb-4861-80ea-58015134fb5e
 w
-java:S3740 "/Provide the parametrized type for this generic.(º°Çşûÿÿÿÿ8ŠºÑÜ‚2J$da893a3d-81cb-45e3-a2a2-9a66685d38e0
+java:S3740*"/Provide the parametrized type for this generic.(º°Çşûÿÿÿÿ8¸¶îÖ…2J$7d79541c-4910-4ccb-ba1f-6895a72629fe
 w
-java:S3740!"/Provide the parametrized type for this generic.(°Óú‰ùÿÿÿÿ8ŠºÑÜ‚2J$08e8964c-9841-4892-8cf6-cbe8e19c8c12
+java:S3740+"/Provide the parametrized type for this generic.(°Óú‰ùÿÿÿÿ8¹¶îÖ…2J$6af7e1f9-4a11-4ea7-93ce-b3c7c4da7a89
 r
-java:S3740""/Provide the parametrized type for this generic.(Õ…¼í8ŠºÑÜ‚2J$a9d0c2d7-da7c-41f9-8979-b21ec29ea6da
+java:S3740,"/Provide the parametrized type for this generic.(Õ…¼í8¹¶îÖ…2J$c46bc499-7985-4bab-b6b8-5ec8461d8479
 w
-java:S3740#"/Provide the parametrized type for this generic.(ıàİËşÿÿÿÿ8ŠºÑÜ‚2J$1f11e024-3b75-4ce6-98b6-25db63a3366a
+java:S3740-"/Provide the parametrized type for this generic.(ıàİËşÿÿÿÿ8¹¶îÖ…2J$f96efcc5-b108-4393-9e42-a83498957a58
 r
-java:S3740$"/Provide the parametrized type for this generic.(Æ¦Œê8ŠºÑÜ‚2J$a2611cbc-6fde-463c-be36-e2c3b030c1ec
+java:S3740."/Provide the parametrized type for this generic.(Æ¦Œê8¹¶îÖ…2J$5fcbbedf-722b-4d47-80e4-55ee9bdc6ea4
 ‰
-java:S1192R"FDefine a constant instead of duplicating this literal "Error" 5 times.(ã­§8ŒºÑÜ‚2J$0680acee-99a6-4f88-906f-7df7aceaa72c
+java:S1192r"FDefine a constant instead of duplicating this literal "Error" 5 times.(ã­§8º¶îÖ…2J$94ecf0c7-db1b-4f71-bcef-a40a85604a18
  
-java:S1104"]Make customerNameField a static final constant or non-public and provide accessors if needed.(©Ë»8ºÑÜ‚2J$8401c70f-05d0-4cd3-85cd-c914d9f9a286
+java:S1104""]Make customerNameField a static final constant or non-public and provide accessors if needed.(©Ë»8¼¶îÖ…2J$dab2fe83-adc7-4bd3-8374-94c09f28e61c
 ¦
-java:S1104"^Make customerPhoneField a static final constant or non-public and provide accessors if needed.(ª¦äúûÿÿÿÿ8ºÑÜ‚2J$cd027f34-ebc2-499c-8914-eef50a253571
+java:S1104#"^Make customerPhoneField a static final constant or non-public and provide accessors if needed.(ª¦äúûÿÿÿÿ8¼¶îÖ…2J$ccfe1d42-2185-4c0f-b510-3f052b66d922
 
-java:S1104"ZMake productIdField a static final constant or non-public and provide accessors if needed.(·åÓ´8ºÑÜ‚2J$92c49e76-f606-4018-8af3-13d324e600d9
+java:S1104$"ZMake productIdField a static final constant or non-public and provide accessors if needed.(·åÓ´8¼¶îÖ…2J$3b1ecd33-7dae-42fe-b362-c25137dae179
 œ
-java:S1104"YMake quantityField a static final constant or non-public and provide accessors if needed.(ÉáèÊ8ºÑÜ‚2J$cba4c9d4-66b0-4339-af8f-2dd22d60a3e9
+java:S1104%"YMake quantityField a static final constant or non-public and provide accessors if needed.(ÉáèÊ8¼¶îÖ…2J$31fda1c6-9d77-4630-b6e4-a5704d25b11c
 ¢
-java:S1104"ZMake lblProductName a static final constant or non-public and provide accessors if needed.(Š§çàÿÿÿÿÿ8ºÑÜ‚2J$19f0fc26-8b75-4540-96ef-6781013eeb58
+java:S1104&"ZMake lblProductName a static final constant or non-public and provide accessors if needed.(Š§çàÿÿÿÿÿ8¼¶îÖ…2J$38d7a976-e6ea-4c1a-9b91-fdd39caf3db4
 š
-java:S1104"XMake lblUnitPrice a static final constant or non-public and provide accessors if needed.(°„«8ºÑÜ‚2J$54a4cc47-6b40-4eee-96a5-54c09929853d
+java:S1104'"XMake lblUnitPrice a static final constant or non-public and provide accessors if needed.(°„«8¼¶îÖ…2J$e3e46a2d-7fb1-4b00-a488-d19ab24a3d9f
 —
-java:S1104"TMake lblPrice a static final constant or non-public and provide accessors if needed.(×±­Ó8ºÑÜ‚2J$b15ad3d6-1ff4-446b-a297-04a66ed6c4c5
+java:S1104("TMake lblPrice a static final constant or non-public and provide accessors if needed.(×±­Ó8¼¶îÖ…2J$44291555-b912-4878-8896-fff14ffa1fee
 –
-java:S1104"SMake tblCart a static final constant or non-public and provide accessors if needed.(Şâê8ºÑÜ‚2J$8ab4da2f-65fe-4bd7-b6a0-b9e07c8e9a88
+java:S1104)"SMake tblCart a static final constant or non-public and provide accessors if needed.(Şâê8¼¶îÖ…2J$7a45c659-d9a4-4f14-81bb-b626c1759ec8
  
-java:S1104 "XMake colProductId a static final constant or non-public and provide accessors if needed.(º°Çşûÿÿÿÿ8ºÑÜ‚2J$a63e8220-d317-40a0-93fb-4c1c2058d26b
+java:S1104*"XMake colProductId a static final constant or non-public and provide accessors if needed.(º°Çşûÿÿÿÿ8¼¶îÖ…2J$20bad43d-8f5f-401e-87e8-30150e394479
 
-java:S1104!"VMake colProduct a static final constant or non-public and provide accessors if needed.(°Óú‰ùÿÿÿÿ8ºÑÜ‚2J$21e3ec05-f815-4be3-925c-8da1ff0e663c
+java:S1104+"VMake colProduct a static final constant or non-public and provide accessors if needed.(°Óú‰ùÿÿÿÿ8¼¶îÖ…2J$487d222a-b6ad-42d9-8b28-20ce9e14c81b
 ›
-java:S1104""XMake colUnitPrice a static final constant or non-public and provide accessors if needed.(Õ…¼í8ºÑÜ‚2J$087008f2-7747-489a-9560-1d5da1d3f700
+java:S1104,"XMake colUnitPrice a static final constant or non-public and provide accessors if needed.(Õ…¼í8¼¶îÖ…2J$ef6a8f81-4932-4a7e-ab1e-24b17964d73d
 Ÿ
-java:S1104#"WMake colQuantity a static final constant or non-public and provide accessors if needed.(ıàİËşÿÿÿÿ8ºÑÜ‚2J$5de49794-6a01-4c5a-a584-a6ac861bbc4b
+java:S1104-"WMake colQuantity a static final constant or non-public and provide accessors if needed.(ıàİËşÿÿÿÿ8¼¶îÖ…2J$a7f127ee-2281-4ab0-ad2f-3afc95e1e102
 —
-java:S1104$"TMake colPrice a static final constant or non-public and provide accessors if needed.(Æ¦Œê8ºÑÜ‚2J$28ba0c43-89f0-4457-b7a5-e5c13b26a6b7
+java:S1104."TMake colPrice a static final constant or non-public and provide accessors if needed.(Æ¦Œê8¼¶îÖ…2J$d3e1bb9a-9d90-428e-ac59-8baea01047a5
 —
-java:S1104%"TMake lblTotal a static final constant or non-public and provide accessors if needed.(ÿêìˆ8ºÑÜ‚2J$4edb83e2-47bf-4d0b-bdc5-6429e3ee39df
+java:S1104/"TMake lblTotal a static final constant or non-public and provide accessors if needed.(ÿêìˆ8¼¶îÖ…2J$9e2413b8-8f10-48af-92f1-cbc59543cfba
 
-java:S1104&"VMake lblOrderId a static final constant or non-public and provide accessors if needed.(¢–ñ¯ıÿÿÿÿ8ºÑÜ‚2J$38642a82-17f2-495a-9285-68c2c6e62bb7
-u
-java:S1172<"2Remove this unused method parameter "actionEvent".(Û¤è›8¿ºÑÜ‚2J$9bd067c5-26fd-4389-965e-26e7876c1830
-m	java:S106H"+Replace this use of System.out by a logger.(ê¾ú®8ÁºÑÜ‚2J$b801d0e0-9c12-4b36-a578-5c3dffc3d312
-u
-java:S1172_"2Remove this unused method parameter "actionEvent".(ô£½ğ8ÃºÑÜ‚2J$e9281232-64af-45e8-991c-e102f5b6a998
-u
-java:S1172r"2Remove this unused method parameter "actionEvent".(êóå‘8ÆºÑÜ‚2J$d892b923-ef66-45b3-99e4-0ad812da4d51
-u
-java:S1172~"2Remove this unused method parameter "actionEvent".(Èì½î8ÇºÑÜ‚2J$117b9e29-9457-4f84-9d1e-3da95896584d
-{
-java:S1172ƒ"2Remove this unused method parameter "actionEvent".(óü£öÿÿÿÿÿ8ÈºÑÜ‚2J$02518f74-bf59-49ef-914b-03f9c6aed48a
+java:S11040"VMake lblOrderId a static final constant or non-public and provide accessors if needed.(¢–ñ¯ıÿÿÿÿ8¼¶îÖ…2J$cc524852-b4dc-42b5-8d07-9da38433290f
+›
+java:S11041"SMake lblDate a static final constant or non-public and provide accessors if needed.(…“À„ÿÿÿÿÿ8¼¶îÖ…2J$27e50d06-6f35-473d-b4b2-6d7657075e0d
 –
-java:S6204 "RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(œçÖß8ËºÑÜ‚2J$beb47e2a-10d3-4508-92e2-98c6bac24331
+java:S11042"SMake lblTime a static final constant or non-public and provide accessors if needed.(¿°×•8¼¶îÖ…2J$09ad4373-039f-43a0-9bb6-90cc77e97aeb
+u
+java:S1172\"2Remove this unused method parameter "actionEvent".(Û¤è›8Œ·îÖ…2J$f038a949-8f13-46d7-abb2-b4d917208249
+m	java:S106h"+Replace this use of System.out by a logger.(ê¾ú®8·îÖ…2J$97745138-323d-4a37-b85d-04b9db8bf684
+u
+java:S1172"2Remove this unused method parameter "actionEvent".(ô£½ğ8‘·îÖ…2J$95da819d-0728-4c57-81bb-e1ccb01f82fe
+v
+java:S1172’"2Remove this unused method parameter "actionEvent".(êóå‘8”·îÖ…2J$54118a17-7f6a-4076-b752-8ed49227d700
+v
+java:S1172"2Remove this unused method parameter "actionEvent".(Èì½î8–·îÖ…2J$0bec9688-676e-4381-90a3-01023e24db8a
+{
+java:S1172£"2Remove this unused method parameter "actionEvent".(óü£öÿÿÿÿÿ8—·îÖ…2J$9d2dc513-d91e-402c-8397-b447ddc7c466
+–
+java:S6204Ä"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(œçÖß8š·îÖ…2J$c7b9692e-7472-45cd-97db-cec5869c25c3
 q
-java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8·¶øÜ‚2J$c98d4b3c-e22b-4039-a10d-1d27ac0ca87c
+java:S1128")Remove this unused import 'java.net.URL'.(ñìÁ„üÿÿÿÿ8´ƒñÖ…2J$0e17e27d-335b-416d-97a7-8e4acb8bc50e
 }
-java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8·¶øÜ‚2J$058ebe8d-eff0-4dcf-a56c-d747da9a8d2f
+java:S1128"5Remove this unused import 'java.util.ResourceBundle'.(ıÆ£¯øÿÿÿÿ8´ƒñÖ…2J$9bb654fd-1ff5-4efe-8e0e-238029e7a7e0
