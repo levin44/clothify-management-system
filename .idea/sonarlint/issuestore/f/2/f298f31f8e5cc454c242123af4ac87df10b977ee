@@ -1,11 +1,11 @@
 
 {
-java:S1874"3Remove this use of "createQuery"; it is deprecated.(ßêÁìûÿÿÿÿ8÷í¤Ü‚2J$d9c14ec5-4cfd-444a-ab5b-cd39d0c54f69
+java:S1874"3Remove this use of "createQuery"; it is deprecated.(ßêÁìûÿÿÿÿ8÷í¤Ü‚2J$4ea97c5d-11af-4f8b-87c9-deeb4b2bb4ac
 †
-java:S1128">Remove this unused import 'jakarta.persistence.EntityManager'.(·ïŸéúÿÿÿÿ8–•Ö…2J$aee0a4bc-6675-4168-a827-fa1c98701de4
+java:S1128">Remove this unused import 'jakarta.persistence.EntityManager'.(·ïŸéúÿÿÿÿ8•‰÷ÿ…2J$2daa32a0-b44e-4d85-a6ba-ddd88e4a6ce6
 
-java:S1128"ERemove this unused import 'jakarta.persistence.EntityManagerFactory'.(‹ ñºûÿÿÿÿ8–•Ö…2J$2e7704bc-9f70-48ff-a2b1-bb7640b7ea2c
+java:S1128"ERemove this unused import 'jakarta.persistence.EntityManagerFactory'.(‹ ñºûÿÿÿÿ8•‰÷ÿ…2J$aacbbfe0-a61e-4dde-836e-f8268ce0847f
 „
-java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8–•Ö…2J$2e02c2cd-6cf5-412a-8c6c-c3ddb567505a
+java:S1128"<Remove this unused import 'jakarta.persistence.Persistence'.(ŸÖ¦µÿÿÿÿÿ8•‰÷ÿ…2J$e6f3d126-d827-4396-96ef-a93744f82b26
 €
-java:S1128"8Remove this unused import 'org.example.entity.Supplier'.(Ã×€ğıÿÿÿÿ8–•Ö…2J$3c338269-ad78-46ca-9ac8-59b626a3de0a
+java:S1128"8Remove this unused import 'org.example.entity.Supplier'.(Ã×€ğıÿÿÿÿ8•‰÷ÿ…2J$44251e00-08de-4b40-843b-34251aa6a78c

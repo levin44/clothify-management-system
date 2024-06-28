@@ -56,4 +56,13 @@ public class Orders {
     public StringProperty customerNameProperty() {
         return new SimpleStringProperty(customer.getName());
     }
+
+    // Add getter methods for JasperReports
+    public String getEmployeeName() {
+        return user != null ? user.getName() : "N/A";
+    }
+
+    public String getCustomerName() {
+        return customer != null ? customer.getName() : "N/A";
+    }
 }

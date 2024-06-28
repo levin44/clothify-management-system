@@ -1,7 +1,7 @@
 
  
-java:S1104""XMake welcomeLabel a static final constant or non-public and provide accessors if needed.(çÑ±“ÿÿÿÿÿ8Ğä¬ä‚2J$ad235147-423b-4f47-a316-d7fce2899a7b
+java:S1104""XMake welcomeLabel a static final constant or non-public and provide accessors if needed.(çÑ±“ÿÿÿÿÿ8Ğä¬ä‚2J$361cf428-4ea2-4a4d-982d-aa066744f974
 
-java:S1450&"ZRemove the "currentUser" field and declare it as a local variable in the relevant methods.(ûË¥ó8Úô§ä‚2J$eacad5cb-e938-4bd0-a998-7bcd87c63da4
-]	java:S1310""Add a default case to this switch.(ùØ×ËJ$10964ed6-b223-4ce3-98d2-9f552c1ab6df
-k	java:S106N"+Replace this use of System.err by a logger.(½ìÜşşÿÿÿÿJ$d613da6b-4c56-43aa-b6d2-ad36c757eaae
+java:S1450&"ZRemove the "currentUser" field and declare it as a local variable in the relevant methods.(ûË¥ó8Úô§ä‚2J$cf7737e7-95f2-4089-9d99-d0362edf68d7
+]	java:S1317""Add a default case to this switch.(ùØ×ËJ$d07a97ac-22bc-4a1d-9393-fab403c414cf
+k	java:S106U"+Replace this use of System.err by a logger.(½ìÜşşÿÿÿÿJ$ef8f7139-c353-4913-b427-06cfdfccf289

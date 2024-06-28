@@ -9,6 +9,8 @@ import org.example.util.HibernateUtil;
 import org.hibernate.Session;
 import org.hibernate.query.Query;
 
+
+import java.sql.Date;
 import java.util.List;
 
 public class OrderDAO {
@@ -36,4 +38,15 @@ public class OrderDAO {
         session.close();
         return orders;
     }
+
+    public List<Orders> getOrdersByDate(Date startDate, Date endDate) {
+        Session session = HibernateUtil.getSession();
+        Query<Orders> query = session.createQuery("FROM Orders o WHERE o.orderDate BETWEEN :startDate AND :endDate", Orders.class);
+        query.setParameter("startDate", startDate);
+        query.setParameter("endDate", endDate);
+        List<Orders> orders = query.getResultList();
+        session.close();
+        return orders;
+    }
+
 }

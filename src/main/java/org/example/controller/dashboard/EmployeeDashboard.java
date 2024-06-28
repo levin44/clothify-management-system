@@ -36,6 +36,13 @@ public class EmployeeDashboard {
     private Pane mainContent;
 
     private User currentUser;
+
+    public void initialize() throws IOException {
+        String fxmlFile = "/view/Order.fxml";
+        URL fxmlUrl = getClass().getResource(fxmlFile);
+        Node newContent = FXMLLoader.load(fxmlUrl);
+        mainContent.getChildren().setAll(newContent);
+    }
     public void setUser(User user) {
         this.currentUser = user;
         welcomeLabel.setText("Welcome, " + currentUser.getName() + "!");
