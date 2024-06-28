@@ -6,7 +6,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="800.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.orderhistory.OrderHistoryFormController">
+<AnchorPane layoutX="87.0" layoutY="-113.0" prefHeight="800.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.orderhistory.OrderHistoryFormController">
     <children>
         <TableView fx:id="tblOrderHistory" layoutX="180.0" layoutY="159.0" prefHeight="229.0" prefWidth="692.0">
             <columns>

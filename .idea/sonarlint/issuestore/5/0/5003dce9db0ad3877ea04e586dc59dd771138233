@@ -1,7 +1,11 @@
 
  
-java:S1104$"XMake welcomeLabel a static final constant or non-public and provide accessors if needed.(çÑ±“ÿÿÿÿÿ8ÒÈ¤ä‚2J$84735a4d-3852-415a-9524-8e7b56e8632c
+java:S1104&"XMake welcomeLabel a static final constant or non-public and provide accessors if needed.(çÑ±“ÿÿÿÿÿ8ÒÈ¤ä‚2J$0652487c-b6a3-466c-a516-0cb599165306
 
-java:S1450)"ZRemove the "currentUser" field and declare it as a local variable in the relevant methods.(ûË¥ó8ñ»˜ä‚2J$d3e17478-7ffb-4a01-8307-69cb8795f8c8
-d	java:S1314""Add a default case to this switch.(ùØ×Ë8ùÛÖÀ€2J$71c95aa9-2b40-4fa1-94bc-25998037e69d
-r	java:S106R"+Replace this use of System.err by a logger.(½ìÜşşÿÿÿÿ8ÿÛÖÀ€2J$8cdb7ca9-7310-47f6-9e80-ec0ab903c098
+java:S1450+"ZRemove the "currentUser" field and declare it as a local variable in the relevant methods.(ûË¥ó8ñ»˜ä‚2J$a8b00ef1-5258-44a0-92af-d2f65aa0e515
+d	java:S131<""Add a default case to this switch.(ùØ×Ë8¬ ëü…2J$fa04f38e-01b9-4657-8222-1ce52734e766
+r	java:S106Z"+Replace this use of System.err by a logger.(½ìÜşşÿÿÿÿ8Á ëü…2J$be1f734b-34cb-449c-aad0-8e71801fd0fb
+h
+java:S1128"KRemove this unused import 'javafx.scene.control.cell.PropertyValueFactory'.(àÎ¬õ8Å»‹ı…2
+Q
+java:S1128"4Remove this unused import 'org.example.UserContext'.(¹³ğ8Å»‹ı…2

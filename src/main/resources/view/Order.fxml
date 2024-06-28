@@ -69,32 +69,32 @@
             <Font size="20.0" />
          </font>
       </Label>
-      <Label layoutX="53.0" layoutY="152.0" prefHeight="30.0" prefWidth="71.0" text="Order ID : ">
+      <Label layoutX="53.0" layoutY="125.0" prefHeight="30.0" prefWidth="71.0" text="Order ID : ">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="lblOrderId" layoutX="122.0" layoutY="152.0" prefHeight="30.0" prefWidth="71.0">
+      <Label fx:id="lblOrderId" layoutX="122.0" layoutY="125.0" prefHeight="30.0" prefWidth="71.0">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label layoutX="296.0" layoutY="157.0" text="Time :">
+      <Label layoutX="296.0" layoutY="130.0" text="Time :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label layoutX="468.0" layoutY="157.0" text="Date :">
+      <Label layoutX="468.0" layoutY="130.0" text="Date :">
          <font>
             <Font size="15.0" />
          </font>
       </Label>
-      <Label fx:id="lblTime" layoutX="349.0" layoutY="157.0" text="23 : 30 : 45">
+      <Label fx:id="lblTime" layoutX="349.0" layoutY="130.0" text="23 : 30 : 45">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>
       </Label>
-      <Label fx:id="lblDate" layoutX="523.0" layoutY="157.0" text="2010-12-12">
+      <Label fx:id="lblDate" layoutX="523.0" layoutY="130.0" text="2010-12-12">
          <font>
             <Font name="System Bold Italic" size="15.0" />
          </font>

@@ -4,6 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.Pane;
 import javafx.event.ActionEvent;
 import com.jfoenix.controls.JFXButton;
@@ -11,6 +12,7 @@ import javafx.fxml.FXMLLoader;
 import java.io.IOException;
 import javafx.scene.Node;
 import javafx.stage.Stage;
+import org.example.UserContext;
 import org.example.entity.User;
 
 import java.net.URL;
@@ -44,6 +46,12 @@ public class AdminDashboard {
         welcomeLabel.setText("Welcome, " + currentUser.getName() + "!");
     }
 
+    public void initialize() throws IOException {
+        String fxmlFile = "/view/Order.fxml";
+        URL fxmlUrl = getClass().getResource(fxmlFile);
+        Node newContent = FXMLLoader.load(fxmlUrl);
+        mainContent.getChildren().setAll(newContent);
+    }
     @FXML
     public void handleButtonAction(ActionEvent event) throws IOException {
         JFXButton source = (JFXButton) event.getSource();
