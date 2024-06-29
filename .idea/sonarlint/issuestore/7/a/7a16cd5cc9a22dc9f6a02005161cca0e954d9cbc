@@ -1,3 +1,25 @@
 
+
+java:S11926"FDefine a constant instead of duplicating this literal "Error" 3 times.(¦õ‹÷ùÿÿÿÿ8ÛËÚ¨†2J$49f6d64a-3ecf-4d47-bcaa-276af2f6102a
+
+java:S1192>"HDefine a constant instead of duplicating this literal "Success" 3 times.(ÓÁ¾ÿşÿÿÿÿ8á˜Ü¨†2J$5047d87b-b0d8-491d-9e8f-f3d0ad92374f
 ¡
-java:S1104"YMake returnToLogin a static final constant or non-public and provide accessors if needed.(¿‘ªªúÿÿÿÿ8àÊè€2J$6c2e8f05-c955-47a7-8ae0-d14a45bc761a
+java:S1104"YMake returnToLogin a static final constant or non-public and provide accessors if needed.(¿‘ªªúÿÿÿÿ8İËÚ¨†2J$d644792e-0369-4663-97eb-30cd9bce970b
+
+java:S1104"VMake emailField a static final constant or non-public and provide accessors if needed.(ÑäÇÏşÿÿÿÿ8İËÚ¨†2J$44f8d89d-3e79-4e70-aef7-a7673d90f288
+
+java:S1104"UMake codeField a static final constant or non-public and provide accessors if needed.(ÓØÕÀÿÿÿÿÿ8İËÚ¨†2J$2fb91798-aac9-4c48-8a27-9c30825fbed9
+£
+java:S1104"`Make confirmPasswordField a static final constant or non-public and provide accessors if needed.(ßÙæ»8İËÚ¨†2J$5d56e04f-9029-4a21-bef9-ba536e098476
+œ
+java:S1104"YMake passwordField a static final constant or non-public and provide accessors if needed.(ëº¶¹8İËÚ¨†2J$3e174096-b6a7-480d-aff5-efab8dfb6e31
+z
+java:S11723"2Remove this unused method parameter "actionEvent".(ıöĞëøÿÿÿÿ8œÌÚ¨†2J$ba7d6b1b-309b-406f-b171-227c4094e5a0
+z
+java:S1172A"2Remove this unused method parameter "actionEvent".(…×Îüÿÿÿÿ8ÌÚ¨†2J$226d988a-2a17-49d4-847c-dfb7aac98480
+`
+java:S2119l"Save and re-use this "Random".(¼İÅf8ÊÌÚ¨†2J$803923ba-bcba-4c6f-a9cd-b331dd084450
+u
+java:S1172w"2Remove this unused method parameter "actionEvent".(Ã×¿8ÌÌÚ¨†2J$96d58012-1018-4b5b-acf1-0695615f64c0
+v
+java:S1068".Remove this unused "otpStorage" private field.(ê×úÿÿÿÿÿ8ÎÌÚ¨†2J$fcc49428-76b9-4c9b-8c16-2c12b44a4a59
