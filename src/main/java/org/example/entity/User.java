@@ -21,6 +21,7 @@ public class User {
     private String password;
     private String role;
 
+    //orderlist
     @OneToMany(mappedBy = "user",  orphanRemoval = true,fetch = FetchType.EAGER)
     private List<Orders> orders;
 }
