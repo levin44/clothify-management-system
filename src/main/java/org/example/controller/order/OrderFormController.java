@@ -49,6 +49,7 @@ public class OrderFormController {
     public Label lblOrderId;
     public Label lblDate;
     public Label lblTime;
+    public JFXTextField customerEmailField;
 
     private CustomerService customerService = new CustomerService();
     private ProductService productService = new ProductService();
@@ -73,13 +74,7 @@ public class OrderFormController {
     }
 
 
-    private void sendEmail() {
-        String to = "nisaldayan@gmail.com";
-        String subject = "this is subject";
-        String body = "this is body";
 
-        EmailUtil.sendEmail(to, subject, body);
-    }
     private void loadDateAndTime() {
         //Date
         Date date = new Date();
@@ -103,6 +98,7 @@ public class OrderFormController {
         try {
             String customerPhone = customerPhoneField.getText();
             String customerName = customerNameField.getText();
+            String customerEmail = customerEmailField.getText();
 
             if (customerPhone.isEmpty() || customerName.isEmpty()) {
                 showAlert(AlertType.ERROR, "Form Error!", "Please enter customer ID and name");
@@ -111,7 +107,7 @@ public class OrderFormController {
             Customer customer = new Customer();
             customer.setPhone(Integer.parseInt(customerPhone));
             customer.setName(customerName);
-            System.out.println(customer);
+            customer.setEmail(customerEmail);
 
             customerService.addCustomer(customer);
             showAlert(AlertType.INFORMATION, "Success", "Customer added successfully!");
@@ -119,6 +115,7 @@ public class OrderFormController {
             // Clear the fields after successful addition
             customerPhoneField.clear();
             customerNameField.clear();
+            customerEmailField.clear();
 
         } catch (Exception e) {
             showAlert(AlertType.ERROR, "Error", "Failed to add customer: " + e.getMessage());
@@ -223,7 +220,7 @@ public class OrderFormController {
             lblTotal.setText("");
             cartList.clear();
             tblCart.setItems(cartList);
-            sendEmail();
+            sendEmail(customer.getEmail(), order);
 
         } catch (Exception e) {
             showAlert(AlertType.ERROR, "Error", "Failed to place order: " + e.getMessage());
@@ -232,5 +229,28 @@ public class OrderFormController {
 
     }
 
+    private void sendEmail(String customerEmail, Orders order) {
+        String subject = "Order Confirmation - " + order.getOrderId();
+        StringBuilder body = new StringBuilder();
+        body.append("Dear ").append(order.getCustomer().getName()).append(",\n\n");
+        body.append("Thank you for your order! Here are the details:\n\n");
+        body.append("Order ID: ").append(order.getOrderId()).append("\n");
+        body.append("Order Date: ").append(new SimpleDateFormat("yyyy-MM-dd").format(order.getOrderDate())).append("\n\n");
+        body.append("Items:\n");
+
+        for (OrderDetails detail : order.getOrderDetails()) {
+            body.append(detail.getProduct().getName())
+                    .append(" - Quantity: ").append(detail.getQuantity())
+                    .append(" - Price: ").append(detail.getProduct().getPrice())
+                    .append(" - Total: ").append(detail.getQuantity() * detail.getProduct().getPrice())
+                    .append("\n");
+        }
+
+        body.append("\nTotal Cost: ").append(order.getTotalCost()).append("\n\n");
+        body.append("Thank you for shopping with us!\n");
+        body.append("Best regards,\nClothify");
+
+        EmailUtil.sendEmail(customerEmail, subject, body.toString());
+    }
 
 }
