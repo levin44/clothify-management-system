@@ -19,6 +19,7 @@ import org.example.service.CustomerService;
 import javafx.scene.control.Alert.AlertType;
 import org.example.service.OrderService;
 import org.example.service.ProductService;
+import org.example.util.EmailUtil;
 
 import java.net.URL;
 import java.text.DateFormat;
@@ -69,6 +70,15 @@ public class OrderFormController {
 
         lblOrderId.setText(orderService.generateOrderId());
 
+    }
+
+
+    private void sendEmail() {
+        String to = "nisaldayan@gmail.com";
+        String subject = "this is subject";
+        String body = "this is body";
+
+        EmailUtil.sendEmail(to, subject, body);
     }
     private void loadDateAndTime() {
         //Date
@@ -213,6 +223,7 @@ public class OrderFormController {
             lblTotal.setText("");
             cartList.clear();
             tblCart.setItems(cartList);
+            sendEmail();
 
         } catch (Exception e) {
             showAlert(AlertType.ERROR, "Error", "Failed to place order: " + e.getMessage());
@@ -220,4 +231,6 @@ public class OrderFormController {
         }
 
     }
+
+
 }

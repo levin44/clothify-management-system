@@ -81,3 +81,7 @@ Z
 *src/main/java/org/example/UserContext.java,3\b\3b2e7a88b3d1a77e71d03274c80d4dba7aeec3a4
 i
 9src/main/java/org/example/service/SalesReportService.java,a\1\a1cb9e9167cf9a9307770447d0c0022af6c6963f
+]
+-src/main/java/org/example/util/EmailUtil.java,1\1\11a62d5e0df8c69300dc2cef6eaf2eb0bf96a844
+4
+.env,3\c\3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
