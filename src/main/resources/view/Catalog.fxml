@@ -2,6 +2,9 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
@@ -41,17 +44,17 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="215.0" layoutY="396.0" onAction="#handleLadies" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Ladies" textFill="WHITE">
+      <JFXButton layoutX="215.0" layoutY="396.0" onAction="#filterLadies" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Ladies" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="327.0" layoutY="396.0" onAction="#handleGents" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Gents" textFill="WHITE">
+      <JFXButton layoutX="327.0" layoutY="396.0" onAction="#filterGents" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Gents" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="440.0" layoutY="396.0" onAction="#handleKids" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Kids" textFill="WHITE">
+      <JFXButton layoutX="440.0" layoutY="396.0" onAction="#filterKids" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="Kids" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -61,7 +64,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </JFXButton>
-      <JFXButton layoutX="101.0" layoutY="396.0" onAction="#handleAll" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="All" textFill="WHITE">
+      <JFXButton layoutX="101.0" layoutY="396.0" onAction="#filterAll" prefHeight="25.0" prefWidth="100.0" style="-fx-background-color: gray; -fx-background-radius: 10;" text="All" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -70,8 +73,16 @@
       <JFXTextField fx:id="nameField" layoutX="252.0" layoutY="110.0" prefHeight="35.0" prefWidth="167.0" promptText="Name" />
       <JFXTextField fx:id="sizeField" layoutX="45.0" layoutY="171.0" prefHeight="35.0" prefWidth="167.0" promptText="Size" />
       <JFXTextField fx:id="quantityField" layoutX="252.0" layoutY="177.0" prefHeight="35.0" prefWidth="167.0" promptText="Quantity" />
-      <JFXTextField fx:id="catagoryField" layoutX="45.0" layoutY="234.0" prefHeight="35.0" prefWidth="167.0" promptText="Catagory" />
       <JFXTextField fx:id="priceField" layoutX="252.0" layoutY="234.0" prefHeight="35.0" prefWidth="167.0" promptText="Price" />
       <JFXTextField fx:id="supplierField" layoutX="45.0" layoutY="295.0" prefHeight="35.0" prefWidth="167.0" promptText="Supplier" />
+      <ComboBox fx:id="categoryCombo" layoutX="45.0" layoutY="244.0" prefHeight="25.0" prefWidth="167.0" promptText="Select Category">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="kids" />
+               <String fx:value="gents" />
+               <String fx:value="ladies" />
+            </FXCollections>
+         </items>
+      </ComboBox>
    </children>
 </AnchorPane>

@@ -1,19 +1,19 @@
 
 “
-java:S11929"QDefine a constant instead of duplicating this literal "Inventory Report" 3 times.(—ðì|8‘«¼€†2J$68cd8c6b-01cc-4b42-96c0-208627a9bca1
+java:S11929"QDefine a constant instead of duplicating this literal "Inventory Report" 3 times.(—ðì|8‘«¼€†2J$6b8ef110-929d-4ac7-9e4b-26f593479993
 Ž
-java:S11929"LDefine a constant instead of duplicating this literal "ReportTitle" 4 times.(—ðì|8‘«¼€†2J$7c920e19-86bb-4526-b696-d70807acc65e
+java:S11929"LDefine a constant instead of duplicating this literal "ReportTitle" 4 times.(—ðì|8‘«¼€†2J$3442e386-fe9c-4d30-9241-cfcb2ab4719b
 Ÿ
-java:S1192,"WDefine a constant instead of duplicating this literal "Report file not found." 3 times.(ñŸš­øÿÿÿÿ8‘«¼€†2J$13246ba3-028c-4305-baec-ad93c7f9d74e
+java:S1192,"WDefine a constant instead of duplicating this literal "Report file not found." 3 times.(ñŸš­øÿÿÿÿ8‘«¼€†2J$a0fe5b83-330d-4fe3-85a8-3d4e3e668acb
 z
-java:S1172'"2Remove this unused method parameter "actionEvent".(ðÅÝÍÿÿÿÿÿ8Í«¼€†2J$0dba46ff-e365-405f-b543-1910b025cf35
+java:S1172'"2Remove this unused method parameter "actionEvent".(ðÅÝÍÿÿÿÿÿ8Í«¼€†2J$5382d1d9-039f-4b19-83c9-29cf49f161fc
 u
-java:S1172G"2Remove this unused method parameter "actionEvent".(Ðä²Ç8Õ«¼€†2J$ab1606d9-5b18-4485-8cab-a38ceaec0468
+java:S1172G"2Remove this unused method parameter "actionEvent".(Ðä²Ç8Õ«¼€†2J$fa0cb1bf-2907-4ea2-a205-b5e44e6f8797
 u
-java:S1172g"2Remove this unused method parameter "actionEvent".(ŠîÀ¢8×«¼€†2J$120c5fe5-eb1a-4026-ad6c-7c2398f34292
+java:S1172g"2Remove this unused method parameter "actionEvent".(ŠîÀ¢8×«¼€†2J$95f3363f-2420-4639-a7fe-e56d34717be0
 `
-java:S1128"Remove this duplicated import.(„•£8Þ«¼€†2J$7fed1e32-f728-4177-a474-ac8a76359a58
+java:S1128"Remove this duplicated import.(„•£8Þ«¼€†2J$fda5377e-e6f3-49e8-8ae0-e9ed008405ac
 `
-java:S1128"Remove this duplicated import.(„•£8¦†Î€†2J$f9a44f65-6889-4303-93dc-bb2fd36a48d2
+java:S1128"Remove this duplicated import.(„•£8¦†Î€†2J$4f7ac1e9-e305-42c8-9c18-1dc259768d8a
 f
-java:S1128"Remove this duplicated import.(î•¯¼ýÿÿÿÿ8Þ«¼€†2J$d8f1fc61-491e-4772-898e-11c7fb48354d
+java:S1128"Remove this duplicated import.(î•¯¼ýÿÿÿÿ8Þ«¼€†2J$88b7c52f-04e6-4c96-b101-a58922cea637

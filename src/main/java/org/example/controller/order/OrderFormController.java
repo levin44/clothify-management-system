@@ -160,11 +160,20 @@ public class OrderFormController {
 
         cartList.add(cartTbl);
         tblCart.setItems(cartList);
+        calcNetTotal();
     }
 
     public void loadPrice(ActionEvent actionEvent) {
         int qty = Integer.parseInt(quantityField.getText());
         lblPrice.setText(String.valueOf(product.getPrice() * qty));
+    }
+
+    public void calcNetTotal() {
+        double ttl = 0;
+        for (CartTbl cartObj : cartList) {
+            ttl += cartObj.getTotal();
+        }
+        lblTotal.setText(String.valueOf(ttl) + "/=");
     }
 
     public void btnPlaceOrder(ActionEvent actionEvent) {
@@ -220,6 +229,8 @@ public class OrderFormController {
             lblTotal.setText("");
             cartList.clear();
             tblCart.setItems(cartList);
+            System.out.println("this is order");
+            System.out.println(order);
             sendEmail(customer.getEmail(), order);
 
         } catch (Exception e) {
