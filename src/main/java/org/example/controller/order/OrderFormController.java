@@ -264,4 +264,21 @@ public class OrderFormController {
         EmailUtil.sendEmail(customerEmail, subject, body.toString());
     }
 
+    public void loadCustomer(ActionEvent actionEvent) {
+        try {
+            int phone = Integer.parseInt(customerPhoneField.getText());
+            Customer customer = customerService.getCustomerByPhone(phone);
+
+            if (customer != null) {
+                customerNameField.setText(customer.getName());
+                customerEmailField.setText(customer.getEmail());
+
+            } else {
+                showAlert(Alert.AlertType.ERROR, "Error", "Customer not found");
+            }
+        } catch (Exception e) {
+            showAlert(Alert.AlertType.ERROR, "Error", "Failed to load supplier details: " + e.getMessage());
+            e.printStackTrace();
+        }
+    }
 }

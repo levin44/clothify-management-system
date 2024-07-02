@@ -10,7 +10,7 @@
 
 <AnchorPane layoutX="87.0" layoutY="-113.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="731.0" prefWidth="1010.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.order.OrderFormController">
    <children>
-      <JFXTextField fx:id="customerPhoneField" layoutX="53.0" layoutY="190.0" prefHeight="35.0" prefWidth="167.0" promptText="Customer Phone" />
+      <JFXTextField fx:id="customerPhoneField" layoutX="53.0" layoutY="190.0" onAction="#loadCustomer" prefHeight="35.0" prefWidth="167.0" promptText="Customer Phone" />
       <JFXTextField fx:id="productIdField" layoutX="53.0" layoutY="244.0" onAction="#loadProductDetails" prefHeight="35.0" prefWidth="167.0" promptText="Product. ID" />
       <JFXTextField fx:id="quantityField" layoutX="53.0" layoutY="300.0" onAction="#loadPrice" prefHeight="35.0" prefWidth="167.0" promptText="Quantity" />
       <Label fx:id="lblProductName" layoutX="293.0" layoutY="249.0" prefHeight="30.0" prefWidth="244.0" text="Product Name">
