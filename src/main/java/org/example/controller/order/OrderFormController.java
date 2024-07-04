@@ -221,6 +221,7 @@ public class OrderFormController {
             lblOrderId.setText(orderService.generateOrderId());
             customerPhoneField.clear();
             customerNameField.clear();
+            customerEmailField.clear();
             productIdField.clear();
             quantityField.clear();
             lblProductName.setText("");

@@ -1,6 +1,7 @@
 package org.example.auth;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Hyperlink;
@@ -9,6 +10,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.PasswordField;
 import javafx.stage.Stage;
 import org.example.UserContext;
 import org.example.controller.dashboard.AdminDashboard;
@@ -24,7 +26,7 @@ public class LoginFormController {
     public Hyperlink createAccount;
     public JFXButton loginButton;
     public JFXTextField emailField;
-    public JFXTextField passwordField;
+    public JFXPasswordField passwordField;
     private UserService userService = new UserService();
 
     @FXML

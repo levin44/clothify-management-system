@@ -1,15 +1,17 @@
 
 ¢
-java:S1104"ZMake forgotPassword a static final constant or non-public and provide accessors if needed.(ç”½°ÿÿÿÿÿ8’•ÿâ‚2J$05c0d5ee-c3d7-4c45-aa93-610c4924dc50
+java:S1104"ZMake forgotPassword a static final constant or non-public and provide accessors if needed.(ç”½°ÿÿÿÿÿ8’•ÿâ‚2J$748f3a51-3536-4487-8cab-34ef87363b4d
 œ
-java:S1104"YMake createAccount a static final constant or non-public and provide accessors if needed.(ŠŽ™Ê8’•ÿâ‚2J$8eb4aad9-9cbf-4695-81cf-dad5b780e22c
+java:S1104"YMake createAccount a static final constant or non-public and provide accessors if needed.(ŠŽ™Ê8’•ÿâ‚2J$e075b71d-9902-44ea-9764-8f777445aed2
 Ÿ
-java:S1104"WMake loginButton a static final constant or non-public and provide accessors if needed.(øò­Éúÿÿÿÿ8’•ÿâ‚2J$d51140d2-06f7-43d2-bf44-75b202a1fdea
+java:S1104"WMake loginButton a static final constant or non-public and provide accessors if needed.(øò­Éúÿÿÿÿ8’•ÿâ‚2J$f68dc4f1-c53e-4b4a-b157-ebe3084a6147
 ž
-java:S1104"VMake emailField a static final constant or non-public and provide accessors if needed.(ÑäÇÏþÿÿÿÿ8’•ÿâ‚2J$2b462547-5788-4574-915c-1abe5ce2b840
+java:S1104"VMake emailField a static final constant or non-public and provide accessors if needed.(ÑäÇÏþÿÿÿÿ8’•ÿâ‚2J$8356a857-434e-4192-b169-f5d27ed6bdc5
 œ
-java:S1104"YMake passwordField a static final constant or non-public and provide accessors if needed.(ëº¶¹8’•ÿâ‚2J$bc492f85-bf48-452e-93d1-7f1bb8de271e
+java:S1104"YMake passwordField a static final constant or non-public and provide accessors if needed.(¦Ç‰š8’•ÿâ‚2J$20fb53b6-01f2-40f5-a936-a9561b9eaafa
 z
-java:S1172<"2Remove this unused method parameter "actionEvent".(¨™ÀÉÿÿÿÿÿ8¼•ÿâ‚2J$172f6d79-5fda-49dd-bac8-ef168d7c7f47
-~	java:S125>"<This block of commented-out lines of code should be removed.(çý¼Û8¡Ÿ¢ã‚2J$3fe91447-d304-415c-918b-3977a80df984
-~	java:S125W"<This block of commented-out lines of code should be removed.(ìô´ø8ªàÝä‚2J$b5d31cc5-4a46-4e9b-8e10-704af240b503
+java:S1172>"2Remove this unused method parameter "actionEvent".(¨™ÀÉÿÿÿÿÿ8¼•ÿâ‚2J$8d98197a-5494-4f89-9019-6c11381be356
+~	java:S125@"<This block of commented-out lines of code should be removed.(çý¼Û8¡Ÿ¢ã‚2J$b5bbb724-bb78-45e7-b13b-f4ac5aa42c43
+~	java:S125Y"<This block of commented-out lines of code should be removed.(ìô´ø8ªàÝä‚2J$34fb46bd-2d5f-44f5-be07-34ccd8005d56
+‚
+java:S1128"?Remove this unused import 'javafx.scene.control.PasswordField'.(êú´Ë8ÚªÎõ‡2J$f268f310-9eb8-4e67-80b5-d4c8c80b58e3
